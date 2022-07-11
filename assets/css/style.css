@@ -11,6 +11,8 @@ html {
 
 body {
     font-family: font123;
+    }
+    
     font-size: 1.6rem;
 }
 
@@ -230,3 +232,23 @@ h4 {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+/*==============================BLOG===============================*/
+
+#About_Us{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(158, 114, 148, 0.2);
+}
+#About_Us h2{
+    font-size:3rem;
+}
+#Blog{
+    background-image: url("../images/blog/blog-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.immagine-testo{
+    background-color: white;
+}
