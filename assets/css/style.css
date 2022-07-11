@@ -257,10 +257,146 @@ h4 {
 
 /*==============================MENU PRICING===============================*/
 
+#menu-price{
+    padding: 70px 0px;
+}
+
+span {
+    color: tomato;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-price h1, .description{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.description, .pricing p{
+    color: #9D9D9D;
+}
+
+.description{
+    line-height: 2.5rem;
+}
+
+.pricing p{
+    font-size: 90%;
+    line-height: 2.2rem;
+}
+
+.pricing{
+    padding: 60px 0px 0px;
+}
+
+.title{
+    padding: 30px 0px;
+}
+
+.dish-title h2{
+    padding: 0px 0px 10px;
+}
+
+.dish strong{
+    color: #938463;
+}
+
+.dish p{
+    padding: 10px 0px 0px;
+}
+
+.pricing li{
+    padding: 20px 0px;
+    list-style: none;
+}
+
+.pricing ul{
+    padding: 0px 0px 70px;
+}
+
+.more-info{
+    color: tomato;
+    border: 1px solid tomato;
+    background-color: white;
+    padding: 28px 100px;
+    text-decoration: none;
+}
+
+.more-info:hover{
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+    transition: 0.3s all;
+}
+
+
 
 
 /*==============================NEWS LETTER===============================*/
 
+#newsletter{
+    background-image: url("../images/subscribe-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+#newsletter h1{
+    padding: 40px 0px;
+}
+
+#newsletter p{
+    padding: 20px 0px;
+    font-size: 110%;
+}
+
+#newsletter h1, #newsletter p{
+    text-align: center;
+    color: white;
+}
+
+::-webkit-input-placeholder{
+    font-family: font123;
+    src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
+    font-size: 120%;
+    color: #bbb;
+}
+
+.compila-form{
+    width: 100%;
+    padding: 28px 10px;
+    border: 1px solid #bbb;
+    margin-bottom: 2.5rem;
+}
+
+.button-subscribe{
+    width: 70%;
+    padding: 28px 10px;
+    background-color: rgb(119, 183, 183);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
 
 
 /*==============================CONTACT US===============================*/
+
+#contact-us h1{
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#contact-us h3{
+    padding: 20px 0px;
+}
+
+#full-name, #enter-email{
+    padding: 18px 10px;
+    margin-bottom: 1.5rem;
+}
