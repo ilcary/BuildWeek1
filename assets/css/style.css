@@ -1,0 +1,13 @@
+@font-face{
+    font-family: font123;
+    src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: font123;
+}
