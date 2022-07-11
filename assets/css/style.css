@@ -11,3 +11,23 @@ html{
 body{
     font-family: font123;
 }
+
+
+
+#About_Us{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(158, 114, 148, 0.2);
+}
+#About_Us h2{
+    font-size:3rem;
+}
+#Blog{
+    background-image: url("../images/blog/blog-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.immagine-testo{
+    background-color: white;
+}
