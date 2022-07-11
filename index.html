@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,10 +7,96 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/ca90b3e3f2.js" crossorigin="anonymous"></script>
-  
+
 </head>
+
 <body>
 
+
+    <header>
+        <div id="bgheader">
+            <section class="top-nav">
+
+                <div>
+                    <img id="resturant" src="./assets/images/logo.png" alt="logo Ristorante">
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="" target="_blank" class="menuref">HOME</a></li>
+                    <li><a href="" target="_blank" class="menuref">ABOUT US</a></li>
+                    <li><a href="" target="_blank" class="menuref">BLOG</a></li>
+                    <li><a href="" target="_blank" class="menuref">MENU</a></li>
+                    <li><a href="" target="_blank" class="menuref">NEWS</a></li>
+                    <li><a href="" target="_blank" class="menuref">CONTACTS</a></li>
+                </ul>
+            </section>
+        </div>
+    </header>
+
+
+    <div class="slideshow-container">
+
+        <div id="featured">
+            <div id="testo">
+                <h3>FEATURED <span>WORKS</span></h3>
+            </div>
+            <!-- freccia avanti -->
+            <div id="freccia">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <!-- slide show -->
+        <div class="mySlides fade">
+
+            <img src="./assets/images/slider/slider-img-1.jpg">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="./assets/images/slider/slider-img-2.jpg">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="./assets/images/slider/slider-img-3.jpg">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="./assets/images/slider/slider-img-4.jpg">
+        </div>
+
+
+
+
+
+        <!-- The bottoni dot -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
+
 </html>
