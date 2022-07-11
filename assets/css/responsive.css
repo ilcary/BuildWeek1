@@ -9,7 +9,8 @@
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 64px; /*da dove parte la tendina*/
+        margin-top: 64px;
+        /*da dove parte la tendina*/
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -46,22 +47,83 @@
     .menu>li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
-    .top-nav{
+
+    .top-nav {
         width: 90%;
         margin: 0 auto;
         margin-top: -6.4rem;
     }
+
+    /*==========BLOG===========*/
+
+    
+
+
+
+
+
+
+
 }
 
 
+@media screen and (min-width: 578px) and (max-width: 767px) {
 
+    .img-cornice{
+    
+        height: max-content;
+        overflow: hidden;
+        width: 515px;
+    }
+    
+}
 
 
 /*==================TABLET=================*/
 
 
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    
+.immagine-testo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(245, 222, 179, 0);
+    text-align: center;
+    max-width: 90%;
+
+
+}
+
+.img-cornice{
+    width: 50%;
+}
+.immagine-testo .testo {
+    width: 50%;
+    max-width: 50%;
+    padding: 10% 0;
+    background-color: white;
+    
+    
+
+}
+
+
+
+.testo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+}
+
+
+}
 
 
 
@@ -69,4 +131,4 @@
 /*==================DESKTOP=================*/
 
 
-@media screen and (min-width: 920px) {}
+@media screen and (min-width: 990px) {}

@@ -23,6 +23,9 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
 }
 
 h3 {
@@ -93,7 +96,7 @@ h4 {
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: tomato;
+    background-color: #FF5E17;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -153,8 +156,9 @@ h4 {
     margin-bottom: 3rem ;
 }
 
-#testo span{
-    color: tomato;
+span{
+    color: #FF5E17;
+    font-size: 3rem;
 }
 
 
@@ -230,6 +234,62 @@ h4 {
 
 /*==============================BLOG===============================*/
 
+
+
+#blog {
+    text-align: center;
+    padding-top:3rem ;
+}
+
+.immagine-testo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(245, 222, 179, 0);
+    text-align: center;
+    max-width: 90%;
+
+}
+
+.immagine-testo h3 {
+    margin-top: 2.2rem;
+}
+
+
+.immagine-testo .testo {
+    max-width: 100%;
+    background-color: white;
+    padding-bottom: 2.2rem;
+}
+
+.immagine-testo img {
+    transition: transform .5s ease-in-out;
+    min-width: 100%;
+}
+
+.img-cornice{
+    
+    height: max-content;
+    overflow: hidden;
+    width: 100%;
+}
+
+.immagine-testo:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.separatore {
+    border: 0.1px solid rgb(77, 54, 36);
+    width: 12rem;
+    margin: 2.2rem auto;
+}
+
+.whiteone{
+    border: 0.1px solid rgb(255, 255, 255);
+}
+
 #About_Us{
     padding: 50px;
     text-align: center;
@@ -241,9 +301,8 @@ h4 {
 #Blog{
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     
-}
-.immagine-testo{
-    background-color: white;
 }
