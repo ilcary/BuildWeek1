@@ -14,44 +14,32 @@
 
 <body>
 
-
-
-
-
-
-    <header>
-        <div id="bgheader">
-            <section class="top-nav">
-
-                <div>
-                    <img id="resturant" src="./assets/images/logo.png" alt="logo Ristorante">
-                </div>
-                <input id="menu-toggle" type="checkbox">
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="" target="_blank" class="menuref">HOME</a></li>
-                    <li><a href="" target="_blank" class="menuref">ABOUT US</a></li>
-                    <li><a href="" target="_blank" class="menuref">BLOG</a></li>
-                    <li><a href="" target="_blank" class="menuref">MENU</a></li>
-                    <li><a href="" target="_blank" class="menuref">NEWS</a></li>
-                    <li><a href="" target="_blank" class="menuref">CONTACTS</a></li>
-                </ul>
-            </section>
+    <div id="bgheader"></div>
+    <section class="top-nav">
+        <div >
+          <img id="resturant" src="./assets/images/logo.png" alt="logo resturant">
         </div>
-    </header>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+          <li><a href="./chi-siamo.html" target="_blank" class="menuref">Chi siamo</a></li>
+          <li><a href="./contatti.html" target="_blank" class="menuref">Contatti</a></li>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="menuref">Free candy!</a></li>
+        </ul>
+      </section>
 
 
     <div class="slideshow-container">
 
         <div id="featured">
             <div id="testo">
-                <h3>FEATURED <span>WORKS</span></h3>
+                <h3>FEATURED <span>WORKS</span><a class="next" onclick="plusSlides(1)">&#10095;</a></h3>
             </div>
             <!-- freccia avanti -->
             <div id="freccia">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
             </div>
         </div>
 

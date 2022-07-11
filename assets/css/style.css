@@ -50,8 +50,9 @@ h4 {
     height: 64px;
     padding: 2rem;
     box-sizing: border-box;
-    position: fixed;
     background: rgba(255, 255, 255, 0.89);
+    position: sticky;
+    top: 0;
     
 
 }
@@ -137,10 +138,6 @@ h4 {
     height: 25%;
     width: 100%;
     background-size: cover;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-
 
 }
 
@@ -156,14 +153,13 @@ h4 {
     margin-bottom: 3rem ;
 }
 
-#testo>span{
+#testo span{
     color: tomato;
 }
 
 
 .slideshow-container {
     margin: 0;
-    position: relative;
     top: 0rem;
     z-index: 1;
     display: flex;
@@ -184,9 +180,6 @@ h4 {
   /* BOTTONE PER SCORRERE */
   .next {
     cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
     width: auto;
     margin: 0 auto;
     color: rgb(0, 0, 0);
@@ -197,6 +190,7 @@ h4 {
     user-select: none;
     border-radius: 3px 0 0 3px;
     padding: 2rem;
+    margin-left: 7rem;
   }
   
  
