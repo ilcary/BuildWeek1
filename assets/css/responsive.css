@@ -92,6 +92,13 @@
     }
 
 
+/*==============================NEWSLETTER===============================*/
+
+ 
+    .dotted-line{
+        display: none;
+    }
+
 
 
 
@@ -148,7 +155,73 @@
 
     .top-nav {
         font-size: 1rem;
+       
     }
+    
+    
+    /*==============================CONTACT US===============================*/
+
+
+    #contact-us h1{
+        font-size: 4.2rem;
+    }
+
+    .form-contact input, .form-contact textarea{
+        width: 100%;
+    }
+
+    .send-message{
+        width: 65%;
+    }
+    
+    /*==============NEWSLETTER==============*/
+      .gruppo-input{
+        display: flex;
+        margin: 0.5rem  3rem -2rem 3rem ;
+    }
+    
+    .compila-form{
+        width: 70%;
+    }
+
+    .button-subscribe{
+        width: 140%;
+    }
+
+    #newsletter h1{
+        font-size: 4.2rem;
+        padding: 5rem 0rem 2rem;
+    }
+
+    #newsletter p{
+        padding: 1.5rem 0rem;
+    }
+    
+    
+    /*==============================MENU PRICING===============================*/
+
+
+    .container {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    #menu-price h1{
+        font-size: 4.2rem;
+    }
+
+    .dish-title{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .dish-title h2{
+        margin-bottom: -1rem;
+    }
+
+
 
 
     /*==================slide=================*/
@@ -199,10 +272,26 @@
         font-size: 2rem;
     }
 
-    /*================blog====================*/
+
+
+.buttonmessage-right{
+        display: flex;
+        justify-content: flex-end;   
+        padding-top: 2rem; 
+    }
+
+    .send-message{
+        margin: 0rem 0rem;
+    }
+
+}
 
 
 
+
+    footer :not(.copy) {
+        max-width: 1200px;
+    }
 
 
 
@@ -265,15 +354,49 @@
     }
 }
 
-@media screen and (min-width: 990px) {}
 
-
-@media screen and (min-width:1200px) {
-
-
-
-
-    footer :not(.copy) {
-        max-width: 1200px;
+    .container{
+        padding-right: 10rem;
+        padding-left: 10rem;
     }
+
 }
+
+
+@media screen and (min-width: 1200px) {
+
+    .container{
+        padding-right: 0rem;
+        padding-left: 0rem;
+        margin-left: -11rem;
+        margin-right: -11rem;
+    }
+
+    .description{
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+    
+      .gruppo-input{
+        margin: 0.5rem 22rem 1rem 22rem ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
