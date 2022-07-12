@@ -85,6 +85,14 @@
 
 @media screen and (min-width: 768px) {
 
+
+    footer .box1, footer .box2, footer .box3{
+        padding:0px 15px 20px;
+    }
+    footer .box1 ul{
+        display: flex;
+    }
+
     
 .immagine-testo {
     display: flex;
@@ -130,5 +138,36 @@
 
 /*==================DESKTOP=================*/
 
+@media screen and (min-width: 920px) {
+
+
+    footer :not(.copy){
+        max-width:920px;
+        margin: 0 auto;
+    }
+
+    footer .box{
+        display: flex;
+        justify-content:space-around;
+    }
+    footer .box1 ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .box2{
+        flex-shrink: 3;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+
+
+    footer :not(.copy){
+        max-width:1200px;
+   }
+}
 
 @media screen and (min-width: 990px) {}
+
