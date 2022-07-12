@@ -488,8 +488,9 @@ footer .copy span{
     padding: 0rem 0rem 1rem;
 }
 
-.dish strong{
+.dish .dish-price{
     color: #938463;
+    font-size: 1.5rem;
 }
 
 .dish p{
