@@ -291,7 +291,7 @@ span{
 }
 
 .separatore {
-    border: 0.1px solid rgb(77, 54, 36);
+    border: 0.1px solid rgba(77, 54, 36, 0.2);
     width: 12rem;
     margin: 2.2rem auto;
 }
@@ -461,8 +461,7 @@ footer .copy span{
     line-height: 2.5rem;
 }
 
-.dotted-line{
-    position: absolute;
+.border-bottom{
     width: 100%;
     border: 1px dotted #C9C9C9;
 }

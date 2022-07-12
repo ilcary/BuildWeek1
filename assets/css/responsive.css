@@ -192,16 +192,49 @@
     }
 
     .dish-title{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-    
-    .dish-title h2{
-        margin-bottom: -1rem;
+        position: relative;
     }
 
+    .dish-title h2{
+        display: inline-block;
+        position: relative;
+        z-index: 99;
+        background: #fff;
+    } 
+
+    .border-bottom{
+        position: absolute;
+        top: 0;
+        margin-top: 2rem;
+    }
+
+    .dish-title span{
+        float: right;
+    }
+
+    /*.dish-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }*/
+
+    /*.dish-title h2{
+        padding-bottom: 0rem;
+    }*/
+
+    /*.dish-title span{
+        padding-bottom: 0.5rem;
+    }*/
+  
+    
+
+    /*.dish-title h2:after{
+        content: "";
+        width: 100%;
+        display:block;
+        border: 1px dotted #C9C9C9;
+    }*/
+    
 }
 
 /*==================DESKTOP=================*/
@@ -239,7 +272,7 @@
 /*==============================NEWSLETTER===============================*/
 
 @media screen and (max-width: 767px) {
-    .dotted-line{
+    .border-bottom{
         display: none;
     }
 
