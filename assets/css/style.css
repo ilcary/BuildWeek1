@@ -12,12 +12,12 @@ html {
 body {
     font-family: font123;
     font-size: 1.6rem;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
-  
+
 }
 
 h3 {
@@ -40,10 +40,12 @@ h4 {
 
 /*============MENU HAMBURGER=============*/
 
-#resturant{
+#resturant {
     padding-right: 8rem;
 }
-.top-nav {/*da modificare x tablet e desktop margin top e rivedere dove inizia la tendina*/
+
+.top-nav {
+    /*da modificare x tablet e desktop margin top e rivedere dove inizia la tendina*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,7 +59,10 @@ h4 {
     background: rgba(255, 255, 255, 0.89);
     position: sticky;
     top: 0;
-    
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+
 
 }
 
@@ -145,92 +150,78 @@ h4 {
 
 }
 
-/*===========================SLIDE-SHOW==============================*/
+/*====================SLIDE SHOW X2====================*/
 
-#featured{
-    display: flex;
-}
-
-#testo{
-    font-weight: bold;
-    margin-top: 20% ;
-    margin-bottom: 3rem ;
-}
-
-span{
+#testo span {
     color: #FF5E17;
 }
 
-
-.slideshow-container {
-    margin: 0;
-    top: 0rem;
-    z-index: 1;
+.container-sec {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+
+}
+
+.menusopra {
+    position: relative;
+    z-index: -1;
+}
 
 
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-    
-
-  }
-  
-  /* BOTTONE PER SCORRERE */
-  .next {
-    cursor: pointer;
-    width: auto;
+.slide-content {
     margin: 0 auto;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 1.8 rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    border-radius: 3px 0 0 3px;
-    padding: 2rem;
-    margin-left: 7rem;
-  }
-  
- 
-  
-  /* On hover, OSCURA  */
-  .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  
-  /* PUNTI */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin-top: 1rem;
-  }
-  
-  .active, .dot:hover {
-    background-color: tomato;
-  }
-  
-  /* ANIMAZIONE */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+    overflow: hidden;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 0;
+    padding: 25px 0;
+}
+
+.overlay::after {
+
+    background-color: rgb(255, 255, 255);
+}
+
+.card-image {
+    position: relative;
+
+    height: 150px;
+    width: 150px;
+}
+
+.card-image .card-img {
+    height: 150%;
+    width: 150%;
+    object-fit: cover;
+
+}
+
+
+.swiper-pagination {
+    margin-bottom: 10rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000000;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000000;
+}
+
 
 /*==============================ABOUT US===============================*/
 
@@ -238,15 +229,16 @@ span{
 
 #blog {
     text-align: center;
-    padding-top:3rem ;
+    padding-top: 3rem;
 }
-#blog>h2{
+
+#blog>h2 {
     font-weight: bold;
     color: #FFF;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
 }
 
-#blog>h2 span{
+#blog>h2 span {
     font-size: 3rem;
 }
 
@@ -263,6 +255,10 @@ span{
 
 }
 
+.immagine-testo p {
+    padding: 1.5rem;
+}
+
 .immagine-testo h3 {
     margin-top: 2.2rem;
 }
@@ -271,7 +267,6 @@ span{
 .immagine-testo .testo {
     max-width: 100%;
     background-color: white;
-    padding-bottom: 2.2rem;
 }
 
 .immagine-testo img {
@@ -279,8 +274,8 @@ span{
     min-width: 100%;
 }
 
-.img-cornice{
-    
+.img-cornice {
+
     height: max-content;
     overflow: hidden;
     width: 100%;
@@ -288,6 +283,8 @@ span{
 
 .immagine-testo:hover img {
     transform: scale(1.2) rotate(10deg);
+    position: relative;
+    z-index: 1;
 }
 
 .separatore {
@@ -296,23 +293,25 @@ span{
     margin: 2.2rem auto;
 }
 
-.whiteone{
+.whiteone {
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-#About_Us{
+#About_Us {
     padding: 50px;
     text-align: center;
-    
-}
-#background-aboutus{
-    background-color: #eeeeee;
-}
-#About_Us h1{
-    font-size:2.5rem;
+
 }
 
-#About_US span{
+#background-aboutus {
+    background-color: #eeeeee;
+}
+
+#About_Us h1 {
+    font-size: 2.5rem;
+}
+
+#About_US span {
     color: tomato;
     font-weight: bold;
 }
@@ -320,107 +319,148 @@ span{
 
 
 /*==============================BLOG===============================*/
-#blog-background{
+#blog-background {
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
+
 }
 
-.immagine-testo{
+.immagine-testo {
     background-color: white;
 }
 
 
-#Blog span{
+#Blog span {
     color: tomato;
     font-weight: bold;
+}
+
+.intbtn a {
+    color: #FFF;
+}
+
+.intbtn {
+    border: 1px solid #FF5E17;
+    background-color: #FF5E17;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    width: 45%;
+
+}
+
+.intbtn:hover a {
+    color: black;
+}
+
+.intbtn:hover {
+    background-color: #ffffff;
+    transition: 0.3s all;
+
+
 }
 
 
 /*=================================FOOTER================================*/
-footer{
-    
-    font-size:1.4rem;
+footer {
+
+    font-size: 1.4rem;
 }
-footer p, footer address{
+
+footer p,
+footer address {
     line-height: 1.4;
 }
-.box{
+
+.box {
     padding: 70px 0;
 
 }
 
-footer span{
+footer span {
     color: tomato;
 }
 
-footer h3{
+footer h3 {
     font-weight: bold;
     padding: 0px 0px 25px
 }
 
-footer h4{
+footer h4 {
     font-size: 1.8rem;
     padding: 0px 0px 10px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
+
 footer i {
     color: #b0b0b0;
-    padding-right:1.5rem ;
+    padding-right: 1.5rem;
     padding-top: 1rem;
 }
-footer ul{
-    padding:20px, 0px, 0px;
+
+footer ul {
+    padding: 20px, 0px, 0px;
 }
-.stream{
-    padding:20px, 0px, 0px;
+
+.stream {
+    padding: 20px, 0px, 0px;
 }
 
 
-footer .box1, footer .box2, footer .box3{
+footer .box1,
+footer .box2,
+footer .box3 {
     padding: 0px 15px 50px;
 }
-footer .box1 i{
- color: rgb(55, 55, 55)
+
+footer .box1 i {
+    color: rgb(55, 55, 55)
 }
 
-footer .box2 a{
+footer .box2 a {
     color: tomato
 }
-.follow{
+
+.follow {
     padding: 30px 0px 15px;
 }
 
-footer ul a{
+footer ul a {
     font-size: 3.5rem;
 }
-footer ul li{
+
+footer ul li {
     list-style: none;
 }
-footer .copy{
-    line-height:1.3;
+
+footer .copy {
+    line-height: 1.3;
     text-align: center;
-    letter-spacing:1.2;
-    font-size:1.2rem;
+    letter-spacing: 1.2;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding:20px;
+    padding: 20px;
     background-color: rgb(158, 114, 148, 0.2);
 }
-footer .copy span{
-    font-size:1.6rem;
+
+footer .copy span {
+    font-size: 1.6rem;
 }
-.stream img{
+
+.stream img {
     padding: 1rem;
 }
- /*.stream{
+
+/*.stream{
    max-width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -429,7 +469,7 @@ footer .copy span{
 
 /*==============================MENU PRICING===============================*/
 
-#menu-price{
+#menu-price {
     padding: 70px 0px;
 }
 
@@ -441,75 +481,78 @@ footer .copy span{
     margin-right: auto;
 }
 
-#menu-price h1, .description{
+#menu-price h1,
+.description {
     text-align: center;
     padding: 40px 0px;
 }
 
-.description, .pricing p{
+.description,
+.pricing p {
     color: #9D9D9D;
 }
 
-.description{
+.description {
     line-height: 2.5rem;
 }
 
-.pricing p{
+.pricing p {
     font-size: 90%;
     line-height: 2.2rem;
 }
 
-.pricing{
+.pricing {
     padding: 60px 0px 0px;
 }
 
-.title{
+.title {
     padding: 30px 0px;
 }
 
-.dish-title h2{
+.dish-title h2 {
     padding: 0px 0px 10px;
 }
 
-.dish strong{
+.dish strong {
     color: #938463;
 }
 
-.dish p{
+.dish p {
     padding: 10px 0px 0px;
 }
 
-.pricing li{
+.pricing li {
     padding: 20px 0px;
     list-style: none;
 }
 
-.pricing ul{
+.pricing ul {
     padding: 0px 0px 70px;
 }
 
-.more-info{
+.more-info {
     color: #FF5E17;
     border: 1px solid #FF5E17;
     background-color: white;
     font-size: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
-    width: 30rem;
-    
+    width: 45%;
+
 }
 
-.more-info:hover{
+.more-info:hover {
     color: rgb(255, 255, 255);
     background-color: #FF5E17;
     transition: 0.3s all;
-    
+
 }
-.button-right{
+
+.button-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+
 }
 
 
@@ -517,7 +560,7 @@ footer .copy span{
 
 /*==============================NEWS LETTER===============================*/
 
-#newsletter-background{
+#newsletter-background {
     background-image: url("../images/subscribe-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -525,35 +568,36 @@ footer .copy span{
     padding: 100px 0;
 }
 
-#newsletter h1{
+#newsletter h1 {
     padding: 40px 0px;
 }
 
-#newsletter p{
+#newsletter p {
     padding: 20px 0px;
     font-size: 110%;
 }
 
-#newsletter h1, #newsletter p{
+#newsletter h1,
+#newsletter p {
     text-align: center;
     color: white;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     font-family: font123;
     src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
     font-size: 120%;
     color: #bbb;
 }
 
-.compila-form{
+.compila-form {
     width: 100%;
     padding: 28px 10px;
     border: 1px solid #bbb;
     margin-bottom: 2.5rem;
 }
 
-.button-subscribe{
+.button-subscribe {
     width: 70%;
     padding: 28px 10px;
     background-color: rgb(119, 183, 183);
@@ -564,20 +608,20 @@ footer .copy span{
 
 
 
+
 /*==============================CONTACT US===============================*/
 
-#contact-us h1{
+#contact-us h1 {
     padding: 40px 0px;
     text-align: center;
 }
 
-#contact-us h3{
+#contact-us h3 {
     padding: 20px 0px;
 }
 
-#full-name, #enter-email{
+#full-name,
+#enter-email {
     padding: 18px 10px;
     margin-bottom: 1.5rem;
 }
-
-
