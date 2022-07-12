@@ -14,7 +14,10 @@ body {
     font-size: 1.6rem;
     }
     
-    
+    a {
+        text-decoration: none;
+        color: black;
+    }    
 
 
 h1 {
@@ -23,9 +26,7 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
-    font-weight: bold;
-    color: #FFF;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
+  
 }
 
 h3 {
@@ -158,7 +159,6 @@ h4 {
 
 span{
     color: #FF5E17;
-    font-size: 3rem;
 }
 
 
@@ -240,6 +240,16 @@ span{
     text-align: center;
     padding-top:3rem ;
 }
+#blog>h2{
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
+}
+
+#blog>h2 span{
+    font-size: 3rem;
+}
+
 
 .immagine-testo {
     display: flex;
@@ -293,7 +303,10 @@ span{
 #About_Us{
     padding: 50px;
     text-align: center;
-    background-color: rgb(158, 114, 148, 0.2);
+    
+}
+#background-aboutus{
+    background-color: #eeeeee;
 }
 #About_Us h1{
     font-size:2.5rem;
@@ -307,7 +320,7 @@ span{
 
 
 /*==============================BLOG===============================*/
-#Blog{
+#blog-background{
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,6 +350,7 @@ footer p, footer address{
 }
 .box{
     padding: 70px 0;
+
 }
 
 footer span{
@@ -360,6 +374,8 @@ footer a{
 }
 footer i {
     color: #b0b0b0;
+    padding-right:1.5rem ;
+    padding-top: 1rem;
 }
 footer ul{
     padding:20px, 0px, 0px;
@@ -367,6 +383,7 @@ footer ul{
 .stream{
     padding:20px, 0px, 0px;
 }
+
 
 footer .box1, footer .box2, footer .box3{
     padding: 0px 15px 50px;
@@ -400,6 +417,14 @@ footer .copy{
 footer .copy span{
     font-size:1.6rem;
 }
+.stream img{
+    padding: 1rem;
+}
+ /*.stream{
+   max-width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}*/
 
 
 /*==============================MENU PRICING===============================*/
@@ -408,9 +433,6 @@ footer .copy span{
     padding: 70px 0px;
 }
 
-span {
-    color: tomato;
-}
 
 .container {
     padding-right: 15px;
@@ -467,17 +489,27 @@ span {
 }
 
 .more-info{
-    color: tomato;
-    border: 1px solid tomato;
+    color: #FF5E17;
+    border: 1px solid #FF5E17;
     background-color: white;
-    padding: 28px 100px;
-    text-decoration: none;
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: center;
+    width: 30rem;
+    
 }
 
 .more-info:hover{
     color: rgb(255, 255, 255);
-    background-color: tomato;
+    background-color: #FF5E17;
     transition: 0.3s all;
+    
+}
+.button-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
 }
 
 
@@ -485,7 +517,7 @@ span {
 
 /*==============================NEWS LETTER===============================*/
 
-#newsletter{
+#newsletter-background{
     background-image: url("../images/subscribe-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
