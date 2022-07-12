@@ -462,8 +462,9 @@ footer .copy span{
 }
 
 .dotted-line{
-    border: 1px dotted #938463;
-    width: 30%;
+    position: absolute;
+    width: 100%;
+    border: 1px dotted #C9C9C9;
 }
 
 .pricing p{
