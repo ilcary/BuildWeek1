@@ -14,44 +14,36 @@
 
 <body>
 
-
-
-
-
-
-    <header>
-        <div id="bgheader">
-            <section class="top-nav">
-
-                <div>
-                    <img id="resturant" src="./assets/images/logo.png" alt="logo Ristorante">
-                </div>
-                <input id="menu-toggle" type="checkbox">
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="" target="_blank" class="menuref">HOME</a></li>
-                    <li><a href="" target="_blank" class="menuref">ABOUT US</a></li>
-                    <li><a href="" target="_blank" class="menuref">BLOG</a></li>
-                    <li><a href="" target="_blank" class="menuref">MENU</a></li>
-                    <li><a href="" target="_blank" class="menuref">NEWS</a></li>
-                    <li><a href="" target="_blank" class="menuref">CONTACTS</a></li>
-                </ul>
-            </section>
+    <div id="bgheader"></div>
+    <section class="top-nav">
+        <div>
+            <img id="resturant" src="./assets/images/logo.png" alt="logo resturant">
         </div>
-    </header>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">HOME</a></li>
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">ABOUT US</a></li>
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">BLOG</a></li>
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">MENU</a></li>
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">NEWS</a></li>
+            <li><a href="./chi-siamo.html" target="_blank" class="menuref">CONTACTS</a></li>
+
+        </ul>
+    </section>
 
 
     <div class="slideshow-container">
 
         <div id="featured">
             <div id="testo">
-                <h3>FEATURED <span>WORKS</span></h3>
+                <h3>FEATURED <span>WORKS</span><a class="next" onclick="plusSlides(1)">&#10095;</a></h3>
             </div>
             <!-- freccia avanti -->
             <div id="freccia">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
         </div>
 
@@ -104,54 +96,66 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             </article>
         </section>
+
+        <!--====================BLOG============================-->
+
         <section id="Blog">
-            <h2>Latest From the Blog</h2>
-            <div class="separatore"></div>
-            <div class="container">
-                <div class="immagine-testo">
-                    <img src="assets/images/blog/blog-img-1.jpg" alt="Homestyle Chicken Pot Pie">
-                    <div>
+            
+            <h2>Latest <span>From</span> the <span>Blog</span></h2>
+            <div class="separatore whiteone"></div>
+            <div class="container-blog">
+                <div class="immagine-testo"><div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-1.jpg" alt="Homestyle Chicken Pot Pie"></div>
+                    <div class="testo adestra">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <div class="separatore"></div>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
+                </div>
+                <div class="immagine-testo"><div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-2.jpg" alt="Homestyle Chicken Pot Pie"></div>
+                    <div class="testo adestra">
                         <h3>Homestyle Chicken Pot Pie</h3>
                         <div class="separatore"></div>
                         <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                     </div>
                 </div>
                 <div class="immagine-testo">
-                    <img src="assets/images/blog/blog-img-2.jpg" alt="Homestyle Chicken Pot Pie">
-                    <div></div>
-                    <h3>Homestyle Chicken Pot Pie</h3>
-                    <div class="separatore"></div>
-                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+
+                    <div class="testo adestra">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <div class="separatore"></div>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
+                    <div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-3.jpg" alt="Homestyle Chicken Pot Pie"></div>
                 </div>
                 <div class="immagine-testo">
 
-                    <div></div>
-                    <h3>Homestyle Chicken Pot Pie</h3>
-                    <div class="separatore"></div>
-                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-                    <img src="assets/images/blog/blog-img-3.jpg" alt="Homestyle Chicken Pot Pie">
+                    <div class="testo adestra">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <div class="separatore"></div>
+                        <p>Prepared in true
+                            New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
+                    <div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-4.jpg" alt="Homestyle Chicken Pot Pie"></div>
                 </div>
-                <div class="immagine-testo">
-
-                    <div></div>
-                    <h3>Homestyle Chicken Pot Pie</h3>
-                    <div class="separatore"></div>
-                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-                    <img src="assets/images/blog/blog-img-4.jpg" alt="Homestyle Chicken Pot Pie">
+                <div class="immagine-testo"><div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-5.jpg" alt="Homestyle Chicken Pot Pie"></div>
+                    <div class="testo adestra">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <div class="separatore"></div>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
                 </div>
-                <div class="immagine-testo">
-                    <img src="assets/images/blog/blog-img-5.jpg" alt="Homestyle Chicken Pot Pie">
-                    <div></div>
-                    <h3>Homestyle Chicken Pot Pie</h3>
-                    <div class="separatore"></div>
-                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-                </div>
-                <div class="immagine-testo">
-                    <img src="assets/images/blog/blog-img-6.jpg" alt="Homestyle Chicken Pot Pie">
-                    <div></div>
-                    <h3>Homestyle Chicken Pot Pie</h3>
-                    <div class="separatore"></div>
-                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                <div class="immagine-testo"><div class="img-cornice">
+                    <img src="assets/images/blog/blog-img-6.jpg" alt="Homestyle Chicken Pot Pie"></div>
+                    <div class="testo adestra">
+                        <h3>Homestyle Chicken Pot Pie</h3>
+                        <div class="separatore"></div>
+                        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                    </div>
                 </div>
                 <div class="More_Info">
                     <a href="">MORE INFO</a>
@@ -164,7 +168,7 @@
 
 
 
-    <!--======MENU =======-->
+    <!--=========================== MENU ========================-->
 
     <section id="menu-price">
         <div class="container">
