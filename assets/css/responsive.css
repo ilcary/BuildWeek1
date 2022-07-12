@@ -1,7 +1,7 @@
 /*==================MOBILE=================*/
 
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
     .menu-button-container {
         display: flex;
     }
@@ -54,133 +54,173 @@
         margin-top: -6.4rem;
     }
 
+
+    /*==================slide=================*/
+    .slide-container {
+        max-width: 80%;
+        width: 100%;
+        padding: 3rem 0;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
+
+    #testo {
+        font-weight: bold;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 6rem;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 35%;
+    }
+
+    .card-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
     /*==========BLOG===========*/
 
-    
-
-
-
-
-
-
-
-}
-
-
-@media screen and (min-width: 578px) and (max-width: 767px) {
-
-    .img-cornice{
-    
-        height: max-content;
-        overflow: hidden;
-        width: 515px;
+    .intbtn {
+        margin: 3rem auto;
     }
-    
+
+
+/*==============================NEWSLETTER===============================*/
+
+ 
+    .dotted-line{
+        display: none;
+    }
+
+
+
+
+
 }
+
+
 
 
 /*==================TABLET=================*/
+@media screen and (min-width: 767px) and (max-width: 920px) {
+    .intbtn {
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    /*==========BLOG===========*/
+    .container-blog {
+        display: grid;
+    }
+
+    footer .box1,
+    footer .box2,
+    footer .box3 {
+        padding: 0px 15px 20px;
+    }
+
+    footer .box1 ul {
+        display: flex;
+    }
+
+    .immagine-testo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: rgba(245, 222, 179, 0);
+        text-align: center;
+        max-width: 90%;
+    }
 
 
-
-@media screen and (min-width: 768px) {
-
-
+    footer > .box{
+        margin: 0 auto;
+    }
+    footer :not(.copy){
+        max-width:768px;
+    }
+    footer h3{
+        padding-bottom: 10px;
+    }
+    
     footer .box1, footer .box2, footer .box3{
         padding:0px 15px 20px;
     }
+
     footer .box1 ul{
         display: flex;
+        padding-bottom: 20px;
+        justify-content:space-between;
+
+    .img-cornice {
+        width: 50%;
     }
 
-    
-.immagine-testo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: rgba(245, 222, 179, 0);
-    text-align: center;
-    max-width: 90%;
-
-
-}
-
-.img-cornice{
-    width: 50%;
-}
-.immagine-testo .testo {
-    width: 50%;
-    max-width: 50%;
-    padding: 10% 0;
-    background-color: white;
-    
-    
-
-}
-
-
-
-.testo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-
-}
-
-
-}
-
-
-
-
-/*==================DESKTOP=================*/
-
-@media screen and (min-width: 920px) {
-
-
-    section{
-        max-width:920px;
-        margin: 0 auto;
+    .immagine-testo .testo {
+        width: 50%;
+        max-width: 50%;
+        background-color: white;
     }
 
-    footer .box{
+    .top-nav {
+        font-size: 1rem;
+       
+    }
+    
+    
+    /*==============================CONTACT US===============================*/
+
+
+    #contact-us h1{
+        font-size: 4.2rem;
+    }
+
+    .form-contact input, .form-contact textarea{
+        width: 100%;
+
+    }
+
+    .send-message{
+        width: 65%;
+    }
+    
+    /*==============NEWSLETTER==============*/
+      .gruppo-input{
         display: flex;
-        justify-content:space-around;
-        margin: 0 auto;
+        margin: 0.5rem  3rem -2rem 3rem ;
     }
-    footer .box1 ul {
-        display: flex;
-        flex-direction: column;
+    
+    .compila-form{
+        width: 70%;
     }
-    footer .box2{
-        flex-shrink: 3;
+
+    .button-subscribe{
+        width: 140%;
     }
-}
 
-@media screen and (min-width:1200px) {
+    #newsletter h1{
+        font-size: 4.2rem;
+        padding: 5rem 0rem 2rem;
+    }
 
+    #newsletter p{
+        padding: 1.5rem 0rem;
+    }
+    
+    
+    /*==============================MENU PRICING===============================*/
 
-
-
-    footer :not(.copy){
-        max-width:1200px;
-   }
-}
-
-@media screen and (min-width: 990px) {}
-
-
-
-
-
-/*==============================MENU PRICING===============================*/
-
-/*==================TABLET=================*/
-
-@media screen and (min-width: 768px) {
 
     .container {
         padding-right: 2.5rem;
@@ -195,6 +235,7 @@
         position: relative;
     }
 
+<<<<<<< HEAD
     .dish-title h2{
         display: inline-block;
         position: relative;
@@ -235,11 +276,156 @@
         border: 1px dotted #C9C9C9;
     }*/
     
+=======
+
+
+
+    /*==================slide=================*/
+
+    .slide-container {
+        max-width: 80%;
+        width: 100%;
+        padding: 3rem 0;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
+
+    #testo {
+        font-weight: bold;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 6rem;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 32rem;
+    }
+
+
+
+    .testo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+    }
+
+
+>>>>>>> 0f6c935d8241dd5d1efc1d810ad4eebeb1e8e833
 }
+
+
+
 
 /*==================DESKTOP=================*/
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 920px) {
+
+    .top-nav {
+        font-size: 2rem;
+    }
+
+
+
+.buttonmessage-right{
+        display: flex;
+        justify-content: flex-end;   
+        padding-top: 2rem; 
+    }
+
+    .send-message{
+        margin: 0rem 0rem;
+    }
+
+}
+
+
+
+
+    footer :not(.copy) {
+        max-width: 1200px;
+    }
+
+
+
+    section {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
+    .container-blog {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0;
+
+
+    }
+
+    .immagine-testo {}
+
+    .button-blog {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 36.8rem;
+        padding-left: 23rem;
+        margin-bottom: 8rem;
+    }
+
+    .slide-container {
+        max-width: 920px;
+        width: 100%;
+        padding: 3rem 0;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
+
+    #testo {
+        font-weight: bold;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 6rem;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 920px;
+    }
+
+    footer :not(.copy){
+        max-width:920px;
+    }
+    footer .box{
+
+
+
+    footer .box {
+
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    footer .box1 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3{
+        width:30%;
+
+
+    footer .box2 {
+        flex-shrink: 3;
+
+    }
+    footer .stream img:nth-of-type(4){
+        padding-left:0px;
+}
+}
+
 
     .container{
         padding-right: 10rem;
@@ -262,6 +448,7 @@
         padding-right: 15rem;
         padding-left: 15rem;
     }
+<<<<<<< HEAD
 
 }
 
@@ -287,31 +474,10 @@
         display: flex;
         margin: 0.5rem  3rem -2rem 3rem ;
     }
+=======
+>>>>>>> 0f6c935d8241dd5d1efc1d810ad4eebeb1e8e833
     
-    .compila-form{
-        width: 70%;
-    }
-
-    .button-subscribe{
-        width: 140%;
-    }
-
-    #newsletter h1{
-        font-size: 4.2rem;
-        padding: 5rem 0rem 2rem;
-    }
-
-    #newsletter p{
-        padding: 1.5rem 0rem;
-    }
-
-}
-
-/*==================DESKTOP=================*/
-
-@media screen and (min-width: 1200px) {
-
-    .gruppo-input{
+      .gruppo-input{
         margin: 0.5rem 22rem 1rem 22rem ;
     }
 
@@ -321,41 +487,16 @@
 
 
 
-/*==============================CONTACT US===============================*/
 
-/*==================TABLET=================*/
 
-@media screen and (min-width: 768px) {
 
-    #contact-us h1{
-        font-size: 4.2rem;
-    }
 
-    .form-contact input, .form-contact textarea{
-        width: 100%;
-    }
 
-    .send-message{
-        width: 65%;
-    }
 
-}
 
-/*==================DESKTOP=================*/
 
-@media screen and (min-width: 1200px) {
 
-    .buttonmessage-right{
-        display: flex;
-        justify-content: flex-end;   
-        padding-top: 2rem; 
-    }
 
-    .send-message{
-        margin: 0rem 0rem;
-    }
-
-}
-
+    
 
 
