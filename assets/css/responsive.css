@@ -143,6 +143,26 @@
         max-width: 90%;
     }
 
+
+    footer > .box{
+        margin: 0 auto;
+    }
+    footer :not(.copy){
+        max-width:768px;
+    }
+    footer h3{
+        padding-bottom: 10px;
+    }
+    
+    footer .box1, footer .box2, footer .box3{
+        padding:0px 15px 20px;
+    }
+
+    footer .box1 ul{
+        display: flex;
+        padding-bottom: 20px;
+        justify-content:space-between;
+
     .img-cornice {
         width: 50%;
     }
@@ -168,6 +188,7 @@
 
     .form-contact input, .form-contact textarea{
         width: 100%;
+
     }
 
     .send-message{
@@ -337,8 +358,15 @@
         max-width: 920px;
     }
 
+    footer :not(.copy){
+        max-width:920px;
+    }
+    footer .box{
+
+
 
     footer .box {
+
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
@@ -349,9 +377,17 @@
         flex-direction: column;
     }
 
+    .box1, .box2, .box3{
+        width:30%;
+
+
     footer .box2 {
         flex-shrink: 3;
+
     }
+    footer .stream img:nth-of-type(4){
+        padding-left:0px;
+}
 }
 
 

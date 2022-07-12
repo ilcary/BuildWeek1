@@ -378,7 +378,6 @@ footer address {
 
 .box {
     padding: 70px 0;
-
 }
 
 footer span {
@@ -393,6 +392,7 @@ footer h3 {
 footer h4 {
     font-size: 1.8rem;
     padding: 0px 0px 10px;
+    font-weight: 500;
 }
 
 footer a {
@@ -416,6 +416,24 @@ footer ul {
 }
 
 
+
+footer .box1, footer .box3{
+    padding: 0px 15px 50px;
+}
+footer .box2{
+    padding: 20px 15px 70px;
+}
+footer .box1 i{
+ color: rgb(55, 55, 55)
+}
+
+footer .box2 a{
+    color: tomato;
+    font-size:2rem;
+}
+footer .box2 div{
+    padding: 20px 0px 0px;
+=======
 footer .box1,
 footer .box2,
 footer .box3 {
@@ -428,18 +446,24 @@ footer .box1 i {
 
 footer .box2 a {
     color: tomato
+
 }
 
 .follow {
     padding: 30px 0px 15px;
 }
 
+
+footer .box3 ul a{
+=======
 footer ul a {
+
     font-size: 3.5rem;
 }
 
 footer ul li {
     list-style: none;
+    padding: 20px 0px 0px
 }
 
 footer .copy {
@@ -448,6 +472,8 @@ footer .copy {
     letter-spacing: 1.2;
     font-size: 1.2rem;
     font-weight: 600;
+    padding:20px;
+    background-color: #E9E9E9;
     padding: 20px;
     background-color: rgb(158, 114, 148, 0.2);
 }
@@ -455,6 +481,18 @@ footer .copy {
 footer .copy span {
     font-size: 1.6rem;
 }
+
+.stream{
+    padding: 10px 0px 0px;
+}
+.stream img{
+    padding: 1rem;
+}
+.stream img:nth-of-type(1){
+    padding-left:0px;
+}
+ /*animazione footer
+
 
 .stream img {
     padding: 1rem;
@@ -464,8 +502,71 @@ footer .copy span {
    max-width: 70%;
     display: flex;
     justify-content: space-evenly;
+
 }*/
 
+.box1{
+    animation: apparizione1 3s;
+}
+.box2{
+    animation: apparizione2 2s;
+    
+}
+.box3{
+    animation: apparizione3 1.7s;
+    
+}
+@keyframes apparizione1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    33%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+@keyframes apparizione2 {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    33%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    66%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+@keyframes apparizione3 {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    66%{
+        opacity: 0;
+        transform: translateX(-20px);
+    };
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
 
 /*==============================MENU PRICING===============================*/
 
@@ -598,7 +699,7 @@ footer .copy span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-=======
+
 .dish p {
     padding: 10px 0px 0px;
 }
@@ -671,7 +772,7 @@ footer .copy span {
 }
 
 #newsletter h1, #newsletter p{
-=======
+
 #newsletter h1 {
     padding: 40px 0px;
 }
@@ -757,7 +858,6 @@ footer .copy span {
 }
 
 
-=======
 #contact-us h3 {
     padding: 20px 0px;
 }
@@ -767,4 +867,5 @@ footer .copy span {
     padding: 18px 10px;
     margin-bottom: 1.5rem;
 }
+
 
