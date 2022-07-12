@@ -7,7 +7,7 @@
     }
 
     .menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         margin-top: 64px;
         /*da dove parte la tendina*/
@@ -37,7 +37,7 @@
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
-        width: 100%;
+        width: 88%;
         color: white;
         background-color: rgba(207, 207, 207, 0.822);
         position: relative;
@@ -88,8 +88,15 @@
     /*==========BLOG===========*/
 
     .intbtn {
-        margin: 3rem auto;
+        margin: 3rem ;
     }
+    
+    #spessore{
+        display: block;
+        height: 5rem;
+        color: rgba(255, 255, 255, 0.041);
+    }
+
 
 
 /*==============================NEWSLETTER===============================*/
@@ -140,8 +147,20 @@
         margin: 0 auto;
         background-color: rgba(245, 222, 179, 0);
         text-align: center;
-        max-width: 90%;
+        
     }
+
+    .button-blog{
+        margin-bottom: 3rem;
+    }
+
+  
+    #spessore{
+        display: block;
+        height: 5rem;
+        color: rgba(255, 255, 255, 0.041);
+    }
+   
 
 
     footer > .box{
@@ -162,7 +181,7 @@
         display: flex;
         padding-bottom: 20px;
         justify-content:space-between;
-
+    }
     .img-cornice {
         width: 50%;
     }
@@ -266,7 +285,7 @@
     }
 
     .swiper-pagination {
-        margin-bottom: 32rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -305,7 +324,7 @@
         margin: 0rem 0rem;
     }
 
-}
+
 
 
 
@@ -330,7 +349,9 @@
 
     }
 
-    .immagine-testo {}
+/*========================blog===========================*/
+
+
 
     .button-blog {
         grid-column-start: 2;
@@ -361,9 +382,6 @@
     footer :not(.copy){
         max-width:920px;
     }
-    footer .box{
-
-
 
     footer .box {
 
@@ -379,7 +397,7 @@
 
     .box1, .box2, .box3{
         width:30%;
-
+    }
 
     footer .box2 {
         flex-shrink: 3;
@@ -388,7 +406,7 @@
     footer .stream img:nth-of-type(4){
         padding-left:0px;
 }
-}
+
 
 
     .container{
