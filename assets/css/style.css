@@ -430,20 +430,27 @@ footer .copy span{
 /*==============================MENU PRICING===============================*/
 
 #menu-price{
-    padding: 70px 0px;
+    padding: 7rem 0;
 }
 
-
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 #menu-price h1, .description{
     text-align: center;
-    padding: 40px 0px;
+}
+
+#menu-price h1{
+    padding: 7rem 0rem 2rem;
+    font-size: 2.8rem;
+}
+
+#menu-price span{
+    font-weight: bold;
 }
 
 .description, .pricing p{
@@ -454,21 +461,30 @@ footer .copy span{
     line-height: 2.5rem;
 }
 
+.dotted-line{
+    border: 1px dotted #938463;
+    width: 30%;
+}
+
 .pricing p{
     font-size: 90%;
     line-height: 2.2rem;
 }
 
 .pricing{
-    padding: 60px 0px 0px;
+    padding: 6rem 0rem 0rem;
 }
 
 .title{
-    padding: 30px 0px;
+    padding: 3rem 0rem;
+}
+
+.pricing h3, .pricing span{
+    font-weight: bold;
 }
 
 .dish-title h2{
-    padding: 0px 0px 10px;
+    padding: 0rem 0rem 1rem;
 }
 
 .dish strong{
@@ -476,46 +492,48 @@ footer .copy span{
 }
 
 .dish p{
-    padding: 10px 0px 0px;
+    padding: 1rem 0rem 0rem;
 }
 
 .pricing li{
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     list-style: none;
 }
 
 .pricing ul{
-    padding: 0px 0px 70px;
+    padding: 0rem 0rem 7rem;
 }
 
 .more-info{
-    color: #FF5E17;
     border: 1px solid #FF5E17;
     background-color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     padding: 3rem;
     text-align: center;
-    width: 30rem;
-    
+    width: 22rem;
 }
 
-.more-info:hover{
+.more-info a{
+    color: #FF5E17;
+}
+
+.more-info:hover, .more-info a:hover{
     color: rgb(255, 255, 255);
     background-color: #FF5E17;
-    transition: 0.3s all;
-    
+    transition: 0.3s all; 
 }
+
 .button-right{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
 }
 
 
 
 
-/*==============================NEWS LETTER===============================*/
+/*==============================NEWSLETTER===============================*/
 
 #newsletter-background{
     background-image: url("../images/subscribe-bg.jpg");
@@ -525,13 +543,22 @@ footer .copy span{
     padding: 100px 0;
 }
 
+#newsletter .serparatore{
+    border: 0.1px solid rgb(255, 255, 255);
+}
+
 #newsletter h1{
-    padding: 40px 0px;
+    padding: 7rem 0rem 2rem;
+    font-size: 2.8rem;
 }
 
 #newsletter p{
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     font-size: 110%;
+}
+
+#newsletter span{
+    font-weight: bold;
 }
 
 #newsletter h1, #newsletter p{
@@ -543,21 +570,22 @@ footer .copy span{
     font-family: font123;
     src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
     font-size: 120%;
-    color: #bbb;
+    color: rgb(163, 163, 163);
 }
 
 .compila-form{
     width: 100%;
-    padding: 28px 10px;
+    padding: 3rem;
     border: 1px solid #bbb;
+    background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2.5rem;
 }
 
 .button-subscribe{
     width: 70%;
-    padding: 28px 10px;
+    padding: 3rem;
     background-color: rgb(119, 183, 183);
-    border: none;
+    border: 1px solid rgb(119, 183, 183);;
     color: white;
     font-weight: bold;
 }
@@ -566,18 +594,37 @@ footer .copy span{
 
 /*==============================CONTACT US===============================*/
 
+
+#contact-us h3, #contact-us span{
+    font-weight: bold;
+}
+
 #contact-us h1{
-    padding: 40px 0px;
+    padding: 10rem 0rem 2rem;
     text-align: center;
+    font-size: 2.8rem;
 }
 
 #contact-us h3{
-    padding: 20px 0px;
+    padding: 2rem 0rem;
 }
 
-#full-name, #enter-email{
-    padding: 18px 10px;
+#full-name, #enter-email, #contact-us textarea{
+    padding: 1.8rem 1rem;
     margin-bottom: 1.5rem;
+}
+
+.send-message{
+    background-color: #FF5E17;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.send-message a{
+    color: white;
+    font-weight: bold;
 }
 
 
