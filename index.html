@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/ca90b3e3f2.js" crossorigin="anonymous"></script>
 
 </head>
@@ -35,51 +36,101 @@
     </section>
 
 
-    <div class="slideshow-container">
 
-        <div id="featured">
-            <div id="testo">
-                <h3>FEATURED <span>WORKS</span><a class="next" onclick="plusSlides(1)">&#10095;</a></h3>
+    <div class="container-sec">
+        <div id="testo">
+            <div>
+                <h3>FEATURED <span>WORKS</span></h3>
+                
+            </div><div class="swiper-button-next swiper-navBtn">
+                </div>
+        </div>
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <!-- freccia avanti -->
-            <div id="freccia">
-
-            </div>
         </div>
+        <div><div class="swiper-pagination"></div></div>
 
-        <!-- slide show -->
-        <div class="mySlides fade">
-
-            <img src="./assets/images/slider/slider-img-1.jpg">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="./assets/images/slider/slider-img-2.jpg">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="./assets/images/slider/slider-img-3.jpg">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="./assets/images/slider/slider-img-4.jpg">
-        </div>
-
-
-
-
-
-        <!-- The bottoni dot -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
     </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +158,7 @@
                 <h2>Latest <span>From</span> the <span>Blog</span></h2>
                 <div class="separatore whiteone"></div>
                 <div class="container-blog">
+
                     <div class="immagine-testo">
                         <div class="img-cornice">
                             <img src="assets/images/blog/blog-img-1.jpg" alt="Homestyle Chicken Pot Pie">
@@ -118,6 +170,7 @@
                             <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                         </div>
                     </div>
+
                     <div class="immagine-testo">
                         <div class="img-cornice">
                             <img src="assets/images/blog/blog-img-2.jpg" alt="Homestyle Chicken Pot Pie">
@@ -141,7 +194,6 @@
                         </div>
                     </div>
 
-
                     <div class="immagine-testo">
 
                         <div class="testo adestra">
@@ -154,6 +206,8 @@
                             <img src="assets/images/blog/blog-img-4.jpg" alt="Homestyle Chicken Pot Pie">
                         </div>
                     </div>
+
+
                     <div class="immagine-testo">
                         <div class="img-cornice">
                             <img src="assets/images/blog/blog-img-5.jpg" alt="Homestyle Chicken Pot Pie">
@@ -165,7 +219,6 @@
                         </div>
                     </div>
 
-
                     <div class="immagine-testo">
                         <div class="img-cornice">
                             <img src="assets/images/blog/blog-img-6.jpg" alt="Homestyle Chicken Pot Pie">
@@ -176,11 +229,14 @@
                             <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                         </div>
                     </div>
-
-                    <div class="More_Info">
-                        <a href="">MORE INFO</a>
+                    <div class="button-blog">
+                        <div class="intbtn"><a target="_blank" href="#">MORE INFO</a></div>
                     </div>
+
                 </div>
+
+
+
 
             </section>
         </div>
@@ -206,7 +262,7 @@
 
                     <div class="pricing">
                         <div class="title">
-                            <h3>FEATURED <span>ON THE WEEK</span></h3>
+                            <h3>FEATURED <span class="dish-price">ON THE WEEK</span></h3>
                         </div>
 
                         <ul>
@@ -215,7 +271,8 @@
 
                                     <div class="dish-title">
                                         <h2>Pancakes n' Such</h2>
-                                        <strong>$ 25.00</strong>
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 25.00</span>
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -229,7 +286,8 @@
 
                                     <div class="dish-title">
                                         <h2>Homestyle Chicken Pop Pie</h2>
-                                        <strong>$ 10.00</strong>
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 10.00</span>
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -243,7 +301,8 @@
 
                                     <div class="dish-title">
                                         <h2>Cereal, Panecillos y Frutas</h2>
-                                        <strong>$ 5.00</strong>
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 5.00</span>
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -257,7 +316,8 @@
 
                                     <div class="dish-title">
                                         <h2>Meat of Skewers</h2>
-                                        <strong>$ 15.00</strong>
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 15.00</span>
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -271,7 +331,8 @@
 
                                     <div class="dish-title">
                                         <h2>Steak with a Garlic and Parsley Risotto</h2>
-                                        <strong>$ 75.00</strong>
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 75.00</span>
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -285,7 +346,13 @@
 
                                     <div class="dish-title">
                                         <h2>Caesar Salad</h2>
+
+                                        <div class="dotted-line"></div>
+                                        <span class="dish-price">$ 7.00</span>
+
+                                        <div class="bdotted"></div>
                                         <strong>$ 7.00</strong>
+
                                     </div>
 
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
@@ -338,6 +405,8 @@
         </section>
     </div>
 
+    <!--=============================CONTACT US=================================-->
+
     <section id="contact-us">
         <div class="container">
             <div class="row">
@@ -352,7 +421,8 @@
                             placeholder="Write your full name here...">
                         <input type="email" class="compila-form" id="enter-email"
                             placeholder="Write your email address here...">
-                        <textarea class="compila-form" rows="5" placeholder="Write your message here..."></textarea>
+                        <textarea class="compila-form" rows="7" placeholder="Write your message here..."></textarea>
+                        <div class="buttonmessage-right"><div class="send-message"><a target="_blank" href="#">SEND YOUR MESSAGE</a></div></div>
                     </form>
 
                 </div>
@@ -431,7 +501,10 @@
 
 
 
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
 </body>
 
 
