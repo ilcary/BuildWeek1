@@ -23,6 +23,9 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
 }
 
 h3 {
@@ -50,8 +53,9 @@ h4 {
     height: 64px;
     padding: 2rem;
     box-sizing: border-box;
-    position: fixed;
     background: rgba(255, 255, 255, 0.89);
+    position: sticky;
+    top: 0;
     
 
 }
@@ -92,7 +96,7 @@ h4 {
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: tomato;
+    background-color: #FF5E17;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -137,10 +141,6 @@ h4 {
     height: 25%;
     width: 100%;
     background-size: cover;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-
 
 }
 
@@ -156,14 +156,14 @@ h4 {
     margin-bottom: 3rem ;
 }
 
-#testo>span{
-    color: tomato;
+span{
+    color: #FF5E17;
+    font-size: 3rem;
 }
 
 
 .slideshow-container {
     margin: 0;
-    position: relative;
     top: 0rem;
     z-index: 1;
     display: flex;
@@ -184,9 +184,6 @@ h4 {
   /* BOTTONE PER SCORRERE */
   .next {
     cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
     width: auto;
     margin: 0 auto;
     color: rgb(0, 0, 0);
@@ -197,6 +194,7 @@ h4 {
     user-select: none;
     border-radius: 3px 0 0 3px;
     padding: 2rem;
+    margin-left: 7rem;
   }
   
  
@@ -236,6 +234,62 @@ h4 {
 
 /*==============================ABOUT US===============================*/
 
+
+
+#blog {
+    text-align: center;
+    padding-top:3rem ;
+}
+
+.immagine-testo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(245, 222, 179, 0);
+    text-align: center;
+    max-width: 90%;
+
+}
+
+.immagine-testo h3 {
+    margin-top: 2.2rem;
+}
+
+
+.immagine-testo .testo {
+    max-width: 100%;
+    background-color: white;
+    padding-bottom: 2.2rem;
+}
+
+.immagine-testo img {
+    transition: transform .5s ease-in-out;
+    min-width: 100%;
+}
+
+.img-cornice{
+    
+    height: max-content;
+    overflow: hidden;
+    width: 100%;
+}
+
+.immagine-testo:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.separatore {
+    border: 0.1px solid rgb(77, 54, 36);
+    width: 12rem;
+    margin: 2.2rem auto;
+}
+
+.whiteone{
+    border: 0.1px solid rgb(255, 255, 255);
+}
+
 #About_Us{
     padding: 50px;
     text-align: center;
@@ -256,12 +310,16 @@ h4 {
 #Blog{
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     
 }
+
 .immagine-testo{
     background-color: white;
 }
+
 
 #Blog span{
     color: tomato;
@@ -342,3 +400,152 @@ footer .copy{
 footer .copy span{
     font-size:1.6rem;
 }
+
+
+/*==============================MENU PRICING===============================*/
+
+#menu-price{
+    padding: 70px 0px;
+}
+
+span {
+    color: tomato;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-price h1, .description{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.description, .pricing p{
+    color: #9D9D9D;
+}
+
+.description{
+    line-height: 2.5rem;
+}
+
+.pricing p{
+    font-size: 90%;
+    line-height: 2.2rem;
+}
+
+.pricing{
+    padding: 60px 0px 0px;
+}
+
+.title{
+    padding: 30px 0px;
+}
+
+.dish-title h2{
+    padding: 0px 0px 10px;
+}
+
+.dish strong{
+    color: #938463;
+}
+
+.dish p{
+    padding: 10px 0px 0px;
+}
+
+.pricing li{
+    padding: 20px 0px;
+    list-style: none;
+}
+
+.pricing ul{
+    padding: 0px 0px 70px;
+}
+
+.more-info{
+    color: tomato;
+    border: 1px solid tomato;
+    background-color: white;
+    padding: 28px 100px;
+    text-decoration: none;
+}
+
+.more-info:hover{
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+    transition: 0.3s all;
+}
+
+
+
+
+/*==============================NEWS LETTER===============================*/
+
+#newsletter{
+    background-image: url("../images/subscribe-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+#newsletter h1{
+    padding: 40px 0px;
+}
+
+#newsletter p{
+    padding: 20px 0px;
+    font-size: 110%;
+}
+
+#newsletter h1, #newsletter p{
+    text-align: center;
+    color: white;
+}
+
+::-webkit-input-placeholder{
+    font-family: font123;
+    src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
+    font-size: 120%;
+    color: #bbb;
+}
+
+.compila-form{
+    width: 100%;
+    padding: 28px 10px;
+    border: 1px solid #bbb;
+    margin-bottom: 2.5rem;
+}
+
+.button-subscribe{
+    width: 70%;
+    padding: 28px 10px;
+    background-color: rgb(119, 183, 183);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*==============================CONTACT US===============================*/
+
+#contact-us h1{
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#contact-us h3{
+    padding: 20px 0px;
+}
+
+#full-name, #enter-email{
+    padding: 18px 10px;
+    margin-bottom: 1.5rem;
+}
+
+
