@@ -116,6 +116,7 @@
 }
 
 @media screen and (min-width: 767px) {
+}
 
     /*==========BLOG===========*/
     .container-blog {
@@ -235,7 +236,6 @@
         position: relative;
     }
 
-<<<<<<< HEAD
     .dish-title h2{
         display: inline-block;
         position: relative;
@@ -252,6 +252,7 @@
     .dish-title span{
         float: right;
     }
+}
 
     /*.dish-title{
         display: flex;
@@ -276,47 +277,7 @@
         border: 1px dotted #C9C9C9;
     }*/
     
-=======
 
-
-
-    /*==================slide=================*/
-
-    .slide-container {
-        max-width: 80%;
-        width: 100%;
-        padding: 3rem 0;
-        margin-top: 3rem;
-        margin-bottom: 8rem;
-    }
-
-    #testo {
-        font-weight: bold;
-        display: flex;
-        margin: 0 auto;
-        margin-top: 6rem;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 80%;
-    }
-
-    .swiper-pagination {
-        margin-bottom: 32rem;
-    }
-
-
-
-    .testo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-
-    }
-
-
->>>>>>> 0f6c935d8241dd5d1efc1d810ad4eebeb1e8e833
-}
 
 
 
@@ -448,7 +409,6 @@
         padding-right: 15rem;
         padding-left: 15rem;
     }
-<<<<<<< HEAD
 
 }
 
@@ -474,8 +434,6 @@
         display: flex;
         margin: 0.5rem  3rem -2rem 3rem ;
     }
-=======
->>>>>>> 0f6c935d8241dd5d1efc1d810ad4eebeb1e8e833
     
       .gruppo-input{
         margin: 0.5rem 22rem 1rem 22rem ;

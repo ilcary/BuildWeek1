@@ -573,10 +573,6 @@ footer .copy span {
 
 #menu-price{
     padding: 7rem 0;
-
-#menu-price {
-    padding: 70px 0px;
-
 }
 
 .container {
@@ -609,13 +605,7 @@ footer .copy span {
     line-height: 2.5rem;
 }
 
-<<<<<<< HEAD
 .border-bottom{
-=======
-
-.dotted-line{
-    position: absolute;
->>>>>>> 0f6c935d8241dd5d1efc1d810ad4eebeb1e8e833
     width: 100%;
     border: 1px dotted #C9C9C9;
 }
@@ -623,7 +613,6 @@ footer .copy span {
 
 
 .pricing p {
-
     font-size: 90%;
     line-height: 2.2rem;
 }
@@ -645,8 +634,6 @@ footer .copy span {
     padding: 0rem 0rem 1rem;
 }
 
-.dish .dish-price{
-=======
 .pricing {
     padding: 60px 0px 0px;
 }
@@ -703,13 +690,14 @@ footer .copy span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
 
 .dish p {
-    padding: 10px 0px 0px;
+    padding: 10rem 0rem 0rem;
 }
 
 .pricing li {
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     list-style: none;
 }
 
@@ -725,7 +713,6 @@ footer .copy span {
     padding: 2rem;
     text-align: center;
     width: 45%;
-
 }
 
 .more-info:hover {
@@ -775,14 +762,12 @@ footer .copy span {
     font-weight: bold;
 }
 
-#newsletter h1, #newsletter p{
-
 #newsletter h1 {
-    padding: 40px 0px;
+    padding: 4rem 0rem;
 }
 
 #newsletter p {
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     font-size: 110%;
 }
 
@@ -830,10 +815,10 @@ footer .copy span {
 
 #contact-us h1{
     padding: 10rem 0rem 2rem;
+}
 
 #contact-us h1 {
-    padding: 40px 0px;
-
+    padding: 4rem 0rem;
     text-align: center;
     font-size: 2.8rem;
 }
