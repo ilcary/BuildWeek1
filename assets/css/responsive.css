@@ -85,6 +85,8 @@
         padding: 1rem 0;
     }
 
+}
+
     /*==========BLOG===========*/
 
     .intbtn {
@@ -99,20 +101,20 @@
 
 
 
+
 /*==============================NEWSLETTER===============================*/
 
+@media screen and (max-width: 767px){
  
-    .dotted-line{
+    .border-bottom{
         display: none;
     }
+
 
 
     .maps{
         display: none;
     }
-
-
-
 
 
 }
@@ -121,7 +123,10 @@
 
 
 /*==================TABLET=================*/
+
+
 @media screen and (min-width: 767px) and (max-width: 991px) {
+
     .intbtn {
         margin: 3rem auto;
     }
@@ -239,7 +244,8 @@
     }
     
     /*==============NEWSLETTER==============*/
-      .gruppo-input{
+    
+    .gruppo-input{
         display: flex;
         margin: 0.5rem  3rem -2rem 3rem ;
     }
@@ -274,16 +280,38 @@
         font-size: 4.2rem;
     }
 
+    .dish{
+        box-sizing: border-box;
+    }
+
     .dish-title{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
+        position: relative;
     }
     
     .dish-title h2{
-        margin-bottom: -1rem;
+        display: inline-block;
+        position: relative;
+        z-index: 99;
+        background-color: white;
     }
+
+    .dish-title span{
+        float: right;
+    }
+
+    .dish-title:after{
+        content: "";
+        display: block;
+        width: 100%;
+        border: 1px dotted #C9C9C9;
+        position: absolute;
+        margin-top: -1.5rem;
+    }
+
+    .dish p{
+        margin-top: -1rem;
+    }
+}
 
 
 
@@ -322,12 +350,9 @@
 
     }
 
-
     .maps{
         display: none;
     }
-
-
 
 }
 
@@ -342,15 +367,25 @@
         font-size: 2rem;
     }
 
+
     .buttonmessage-right{
         display: flex;
         justify-content: flex-end;   
         padding-top: 2rem; 
     }
 
+
     .send-message{
-        margin: 0rem 0rem;
+        width: 50%;
     }
+
+
+
+    footer :not(.copy) {
+        max-width: 1200px;
+    }
+
+
     section {
         max-width: 940px;
         margin: 0 auto;
@@ -435,10 +470,13 @@
     footer .stream img:nth-of-type(4){
         padding-left:0px;
 
+    }
+
 }
 
 .maps{
     display: block;
+
 }
 
 
@@ -458,9 +496,31 @@
         margin: 0.5rem 22rem 1rem 22rem ;
     }
 
+
+
+    .buttonmessage-right{
+        display: flex;
+        justify-content: flex-end;   
+        padding-top: 2rem; 
+    }
+
+    .buttonmessage-right{
+        display: flex;
+        justify-content: flex-end;   
+    }
+
+    .send-message{
+        margin: 0rem 0rem;
+    }
+
+    
+
+}
+
     footer :not(.copy) {
         max-width: 1170px;
     }
+
 
 }
 
@@ -478,5 +538,4 @@
 
 
     
-
 

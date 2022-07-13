@@ -319,6 +319,7 @@ section {
 }
 
 .separatore {
+
     border: 0.1px solid #C8C1B3;
     width: 12rem;
     margin: 2.2rem auto;
@@ -610,17 +611,19 @@ footer .copy span {
 }
 
 @keyframes apparizione3 {
+
     0% {
+
         opacity: 0;
         transform: translateX(-20px);
     }
 
     66% {
+
         opacity: 0;
         transform: translateX(-20px);
     }
 
-    ;
 
     100% {
         opacity: 1;
@@ -646,10 +649,6 @@ footer .copy span {
     padding: 7rem 0;
 }
 
-#menu-price {
-    padding: 70px 0px;
-
-}
 
 .container {
     padding-right: 1.5rem;
@@ -668,9 +667,13 @@ footer .copy span {
     font-size: 2.8rem;
 }
 
-#menu-price span {
+
+#menu-price h1 span, #menu-price h3 span{
+
     font-weight: bold;
+    color: #FF530A;
 }
+
 
 .description,
 .pricing p {
@@ -687,8 +690,6 @@ footer .copy span {
     width: 80%;
     border: 1px dotted #C9C9C9;
 }
-
-
 
 .pricing p {
 
@@ -716,7 +717,8 @@ footer .copy span {
 
 .dish .dish-price {
     color: #938463;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
 }
 
 .pricing {
@@ -725,21 +727,18 @@ footer .copy span {
 
 .title {
     padding: 30px 0px;
+
 }
 
 .dish-title h2 {
     padding: 0px 0px 10px;
 }
 
-.dish strong {
 
+.dish p{
     color: #938463;
     font-size: 1.5rem;
-}
-
-
-.dish p {
-    padding: 1rem 0rem 0rem;
+     padding: 1rem 0rem 0rem;
 }
 
 .pricing li {
@@ -751,7 +750,7 @@ footer .copy span {
     padding: 0rem 0rem 7rem;
 }
 
-.more-info {
+.more-info{
     border: 1px solid #FF5E17;
     background-color: white;
     font-size: 1.6rem;
@@ -761,43 +760,23 @@ footer .copy span {
     width: 22rem;
 }
 
-.more-info a {
+.more-info a{
     color: #FF5E17;
 }
 
-.more-info:hover,
-.more-info a:hover {
-    color: rgb(255, 255, 255);
+.more-info:hover a{
+    color:white;
+}
+
+.more-info:hover{
     background-color: #FF5E17;
-    transition: 0.3s all;
+    transition: 0.3s all; 
 }
 
-.button-right {
+.button-right{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.dish p {
-    padding: 1rem 0 0;
-}
-
-.pricing li {
-    padding: 2rem 0;
-    list-style: none;
-}
-
-.pricing ul {
-    padding: 0 0 7rem;
-}
-
-
-.button-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-
 }
 
 
@@ -828,8 +807,10 @@ footer .copy span {
     font-size: 110%;
 }
 
-#newsletter span {
+
+#newsletter h1 span{
     font-weight: bold;
+    color: #FF530A;
 }
 
 #newsletter h1,
@@ -886,26 +867,23 @@ footer .copy span {
 
 
 
-#contact-us h3,
-#contact-us span {
+#contact-us h1 span, #contact-us h3 span{
     font-weight: bold;
+    color: #FF530A;
 }
 
-#contact-us h1 {
+#contact-us h1{
     padding: 10rem 0rem 2rem;
     text-align: center;
     font-size: 2.8rem;
 }
 
-
-
-#contact-us h3 {
+#contact-us h3{
     padding: 2rem 0rem;
+    font-weight: bold;
 }
 
-#full-name,
-#enter-email,
-#contact-us textarea {
+#full-name, #enter-email, #contact-us textarea{
     padding: 1.8rem 1rem;
     margin-bottom: 1.5rem;
 }
@@ -916,6 +894,7 @@ footer .copy span {
     padding: 2rem;
     text-align: center;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .send-message a {
@@ -935,8 +914,9 @@ footer .copy span {
 }
 
 
+
 /*==============================================ANIMAZIONI==========================================
-==============MENU ==*/
+========MENU ==*/
 
 .reveal {
     position: relative;
@@ -1024,3 +1004,4 @@ li a.active1:hover:after
     transform: translateY(0);
     opacity: 1;
   }
+
