@@ -126,14 +126,14 @@
 /*==================TABLET=================*/
 
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     .intbtn {
         margin: 3rem auto;
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
     /*===========ABOUT US================*/
 
@@ -197,7 +197,7 @@
     }
     
     
-    /*==============================CONTACT US===============================*/
+    /*================CONTACT US================*/
 
 
     #contact-us h1{
@@ -324,7 +324,7 @@
         display: none;
     }
 
-/*=======FOOTER========*/
+/*==============FOOTER=================*/
 
     footer > .box{
         margin: 0 auto;
@@ -344,6 +344,10 @@
         display: flex;
         padding-bottom: 20px;
         justify-content:space-between;
+    }
+
+    footer .copy{
+        padding-top: 30px;
     }
 }
 
