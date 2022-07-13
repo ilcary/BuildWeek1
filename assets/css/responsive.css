@@ -336,9 +336,9 @@
     }
 
 
-    .buttonmessage-right{ 
-        padding-top: 2rem; 
-    } 
+    .send-message{
+        width: 50%;
+    }
 
 
 
