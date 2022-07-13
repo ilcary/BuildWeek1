@@ -59,6 +59,7 @@ h4 {
     background: rgba(255, 255, 255, 0.89);
     position: sticky;
     top: 0;
+    z-index: 100;
     max-width: 90%;
     margin: 0 auto;
     font-size: 1.2rem;
@@ -150,6 +151,11 @@ h4 {
 
 }
 
+section{
+    max-width: 90%;
+    margin:0 auto;
+}
+
 /*====================SLIDE SHOW X2====================*/
 
 #testo span {
@@ -209,9 +215,7 @@ h4 {
 }
 
 
-.swiper-pagination {
-    margin-bottom: 10rem;
-}
+
 
 .swiper-pagination-bullet {
     background-color: #000000;
@@ -251,7 +255,7 @@ h4 {
     margin: 0 auto;
     background-color: rgba(245, 222, 179, 0);
     text-align: center;
-    max-width: 90%;
+    max-width: 100%;
 
 }
 
@@ -288,7 +292,7 @@ h4 {
 }
 
 .separatore {
-    border: 0.1px solid rgba(77, 54, 36, 0.2);
+    border: 0.1px solid rgb(77, 54, 36);
     width: 12rem;
     margin: 2.2rem auto;
 }
@@ -433,7 +437,7 @@ footer .box2 a{
 }
 footer .box2 div{
     padding: 20px 0px 0px;
-=======
+}
 footer .box1,
 footer .box2,
 footer .box3 {
@@ -455,11 +459,11 @@ footer .box2 a {
 
 
 footer .box3 ul a{
-=======
-footer ul a {
-
     font-size: 3.5rem;
+
 }
+
+
 
 footer ul li {
     list-style: none;
@@ -574,6 +578,10 @@ footer .copy span {
 #menu-price{
     padding: 7rem 0;
 }
+#menu-price {
+    padding: 70px 0px;
+
+}
 
 .container {
     padding-right: 1.5rem;
@@ -605,14 +613,17 @@ footer .copy span {
     line-height: 2.5rem;
 }
 
-.border-bottom{
-    width: 100%;
+
+.dotted-line{
+    position: absolute;
+    width: 80%;
     border: 1px dotted #C9C9C9;
 }
 
 
 
 .pricing p {
+
     font-size: 90%;
     line-height: 2.2rem;
 }
@@ -634,6 +645,10 @@ footer .copy span {
     padding: 0rem 0rem 1rem;
 }
 
+.dish .dish-price{
+    color: #938463;
+    font-size: 1.5rem;
+}
 .pricing {
     padding: 60px 0px 0px;
 }
@@ -693,34 +708,18 @@ footer .copy span {
 }
 
 .dish p {
-    padding: 10rem 0rem 0rem;
+    padding: 1rem 0 0;
 }
 
 .pricing li {
-    padding: 2rem 0rem;
+    padding: 2rem 0;
     list-style: none;
 }
 
 .pricing ul {
-    padding: 0px 0px 70px;
+    padding: 0 0 7rem;
 }
 
-.more-info {
-    color: #FF5E17;
-    border: 1px solid #FF5E17;
-    background-color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    text-align: center;
-    width: 45%;
-}
-
-.more-info:hover {
-    color: rgb(255, 255, 255);
-    background-color: #FF5E17;
-    transition: 0.3s all;
-
-}
 
 .button-right {
     display: flex;
@@ -762,12 +761,17 @@ footer .copy span {
     font-weight: bold;
 }
 
+#newsletter h1, #newsletter p{
+    text-align: center;
+    color: #FFF;
+}
+
 #newsletter h1 {
-    padding: 4rem 0rem;
+    padding: 40px 0px;
 }
 
 #newsletter p {
-    padding: 2rem 0rem;
+    padding: 20px 0px;
     font-size: 110%;
 }
 
@@ -815,13 +819,10 @@ footer .copy span {
 
 #contact-us h1{
     padding: 10rem 0rem 2rem;
-}
-
-#contact-us h1 {
-    padding: 4rem 0rem;
     text-align: center;
     font-size: 2.8rem;
 }
+
 
 
 #contact-us h3{
@@ -856,5 +857,4 @@ footer .copy span {
     padding: 18px 10px;
     margin-bottom: 1.5rem;
 }
-
 

@@ -7,7 +7,7 @@
     }
 
     .menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         margin-top: 64px;
         /*da dove parte la tendina*/
@@ -37,7 +37,7 @@
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
-        width: 100%;
+        width: 88%;
         color: white;
         background-color: rgba(207, 207, 207, 0.822);
         position: relative;
@@ -88,8 +88,15 @@
     /*==========BLOG===========*/
 
     .intbtn {
-        margin: 3rem auto;
+        margin: 3rem ;
     }
+    
+    #spessore{
+        display: block;
+        height: 5rem;
+        color: rgba(255, 255, 255, 0.041);
+    }
+
 
 
 /*==============================NEWSLETTER===============================*/
@@ -116,7 +123,6 @@
 }
 
 @media screen and (min-width: 767px) {
-}
 
     /*==========BLOG===========*/
     .container-blog {
@@ -141,8 +147,20 @@
         margin: 0 auto;
         background-color: rgba(245, 222, 179, 0);
         text-align: center;
-        max-width: 90%;
+        
     }
+
+    .button-blog{
+        margin-bottom: 3rem;
+    }
+
+  
+    #spessore{
+        display: block;
+        height: 5rem;
+        color: rgba(255, 255, 255, 0.041);
+    }
+   
 
 
     footer > .box{
@@ -163,7 +181,7 @@
         display: flex;
         padding-bottom: 20px;
         justify-content:space-between;
-
+    }
     .img-cornice {
         width: 50%;
     }
@@ -233,51 +251,55 @@
     }
 
     .dish-title{
-        position: relative;
-    }
-
-    .dish-title h2{
-        display: inline-block;
-        position: relative;
-        z-index: 99;
-        background: #fff;
-    } 
-
-    .border-bottom{
-        position: absolute;
-        top: 0;
-        margin-top: 2rem;
-    }
-
-    .dish-title span{
-        float: right;
-    }
-}
-
-    /*.dish-title{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: flex-end;
-    }*/
-
-    /*.dish-title h2{
-        padding-bottom: 0rem;
-    }*/
-
-    /*.dish-title span{
-        padding-bottom: 0.5rem;
-    }*/
-  
+        justify-content: space-between;
+    }
     
+    .dish-title h2{
+        margin-bottom: -1rem;
+    }
 
-    /*.dish-title h2:after{
-        content: "";
+
+
+
+    /*==================slide=================*/
+
+    .slide-container {
+        max-width: 80%;
         width: 100%;
-        display:block;
-        border: 1px dotted #C9C9C9;
-    }*/
-    
+        padding: 3rem 0;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
 
+    #testo {
+        font-weight: bold;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 6rem;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 3rem;
+    }
+
+
+
+    .testo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+    }
+
+
+}
 
 
 
@@ -302,7 +324,7 @@
         margin: 0rem 0rem;
     }
 
-}
+
 
 
 
@@ -327,7 +349,9 @@
 
     }
 
-    .immagine-testo {}
+/*========================blog===========================*/
+
+
 
     .button-blog {
         grid-column-start: 2;
@@ -358,9 +382,6 @@
     footer :not(.copy){
         max-width:920px;
     }
-    footer .box{
-
-
 
     footer .box {
 
@@ -376,7 +397,7 @@
 
     .box1, .box2, .box3{
         width:30%;
-
+    }
 
     footer .box2 {
         flex-shrink: 3;
@@ -385,7 +406,7 @@
     footer .stream img:nth-of-type(4){
         padding-left:0px;
 }
-}
+
 
 
     .container{
@@ -409,31 +430,6 @@
         padding-right: 15rem;
         padding-left: 15rem;
     }
-
-}
-
-
-
-
-
-/*==============================NEWSLETTER===============================*/
-
-@media screen and (max-width: 767px) {
-    .border-bottom{
-        display: none;
-    }
-
-}
-
-
-/*==================TABLET=================*/
-
-@media screen and (min-width: 768px) {
-
-    .gruppo-input{
-        display: flex;
-        margin: 0.5rem  3rem -2rem 3rem ;
-    }
     
       .gruppo-input{
         margin: 0.5rem 22rem 1rem 22rem ;
@@ -456,5 +452,4 @@
 
 
     
-
 
