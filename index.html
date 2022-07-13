@@ -1,11 +1,535 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resturant</title>
+    <meta name="description" content="ristorante casareccio">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/ca90b3e3f2.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    
+
+<body onscroll="plsStick('#home')">
+    <!--====================MENU HAMBURGER =============================-->
+
+
+    <div id="bgheader">
+        <section class="top-nav" id="home">
+            <div>
+                <img id="resturant" src="./assets/images/logo.png" alt="logo resturant">
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="#home" class="menuref">HOME</a></li>
+                <li><a href="#About_Us" class="menuref">ABOUT US</a></li>
+                <li><a href="#Blog" class="menuref">BLOG</a></li>
+                <li><a href="#menu" class="menuref">MENU</a></li>
+                <li><a href="#news" class="menuref">NEWS</a></li>
+                <li><a href="#contacts" class="menuref">CONTACTS</a></li>
+
+            </ul>
+        </section>
+    </div>
+
+
+
+
+    <div class="container-sec" id="home">
+        <div id="testo">
+            <div>
+                <h3>FEATURED <span>WORKS</span></h3>
+
+            </div>
+            <div class="swiper-button-next swiper-navBtn">
+            </div>
+        </div>
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <main>
+        <div id="background-aboutus">
+            <section id="About_Us">
+                <img src="assets/images/cooker-img.png" alt="Cook">
+                <h1>Your <span>Restaurant's</span>
+                    <div>Website Has To Look <span>Good</span></div>
+                </h1>
+                <div class="separatore"></div>
+                <article> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim
+                    <br>
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                    aute irure dolor in reprehenderit in
+                    <br>
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+        <!--====================BLOG============================-->
+        <div id="Blog"></div>
+        <div id="blog-background">
+            <section class="blog reveal fade-right">
+
+
+                <h2>Latest <span>From</span> the <span>Blog</span></h2>
+                <div class="separatore whiteone"></div>
+                <div class="container-blog">
+
+
+                    <div class="immagine-testo">
+                        <div class="img-cornice">
+                            <img src="assets/images/blog/blog-img-1.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-left"></div>
+                        </div>
+
+                        <div class="testo adestra">
+
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                    </div>
+
+                    <div class="immagine-testo">
+                        <div class="img-cornice">
+                            <img src="assets/images/blog/blog-img-2.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-left"></div>
+                        </div>
+
+                        <div class="testo adestra">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                    </div>
+
+                    <div class="immagine-testo">
+
+                        <div class="testo adestra">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+
+                        <div class="img-cornice asinistra">
+                            <img src="assets/images/blog/blog-img-3.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-right"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="immagine-testo">
+
+                        <div class="testo adestra">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true
+                                New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+
+                        <div class="img-cornice asinistra">
+                            <img src="assets/images/blog/blog-img-4.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-right"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="immagine-testo">
+                        <div class="img-cornice">
+                            <img src="assets/images/blog/blog-img-5.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-left"></div>
+                        </div>
+
+                        <div class="testo adestra">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                    </div>
+
+                    <div class="immagine-testo">
+                        <div class="img-cornice">
+                            <img src="assets/images/blog/blog-img-6.jpg" alt="Homestyle Chicken Pot Pie">
+                            <div class="triangle-left"></div>
+                        </div>
+
+                        <div class="testo adestra">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <div class="separatore"></div>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-blog">
+                    <div class="intbtn"><a target="_blank" href="#">MORE INFO</a></div>
+
+                </div>
+                <div id="spessore">.</div>
+
+
+
+
+
+
+
+
+
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+    <!--=========================== MENU ========================-->
+    <div id="menu"></div>
+
+    <section class="reveal fade-bottom" id="menu-price">
+        <div class="container">
+            <div class="row">
+                <div class="block">
+
+                    <h1> our <span>MENU</span> the <span>PRICE</span></h1>
+                    <div class="separatore"></div>
+
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempora libero
+                        amet modi, itaque enim, quos quidem hic sunt laudantium natus magni ut, officiis quo culpa
+                        voluptatem nam corporis officia.</p>
+
+                    <div class="pricing">
+                        <div class="title">
+                            <h3>FEATURED <span>ON THE WEEK</span></h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Pancakes n' Such</h2>
+                                        <span class="dish-price">$ 25.00</span>
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Homestyle Chicken Pop Pie</h2>
+                                        <span class="dish-price">$ 10.00</span>
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Cereal, Panecillos y Frutas</h2>
+                                        <span class="dish-price">$ 5.00</span>
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Meat of Skewers</h2>
+                                        <span class="dish-price">$ 15.00</span>
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Steak with a Garlic and Parsley Risotto</h2>
+                                        <span class="dish-price">$ 75.00</span>
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dish">
+
+                                    <div class="dish-title">
+                                        <h2>Caesar Salad</h2>
+                                        <span class="dish-price">$ 7.00</span>
+
+
+
+                                    </div>
+
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolorem pariatur
+                                        odit, iure quo magni fugit deleniti cumque illum maiores.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="button-right">
+                            <div class="more-info"><a target="_blank" href="#">MORE INFO</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--=============================NEWSLETTER =================================-->
+    <div id="news"></div>
+
+    <div id="newsletter-background">
+        <section id="newsletter">
+            <div class="container reveal fade-left">
+                <div class="row">
+                    <div class="block">
+
+                        <h1>SUBSCRIBE <span>to our</span> NEWSLETTER</h1>
+                        <div class="separatore whiteone"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <form class="form" action="#">
+                            <div class="gruppo-form">
+                                <div class="gruppo-input">
+                                    <input type="text" class="compila-form" id="email-address"
+                                        placeholder="Enter your email to subscribe...">
+
+                                    <div class="input-subscribe">
+                                        <button class="button-subscribe" type="submit">SUBSCRIBE</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--=============================CONTACT US=================================-->
+    <div id="contacts"></div>
+
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="block">
+
+                    <h1>our <span> CONTACT US</span></h1>
+                    <div class="separatore"></div>
+                    <h3>SIGN UP FOR <span>EMAIL ALERTS</span></h3>
+
+                    <form class="form-contact" action="#">
+                        <input type="text" class="compila-form" id="full-name"
+                            placeholder="Write your full name here...">
+                        <input type="email" class="compila-form" id="enter-email"
+                            placeholder="Write your email address here...">
+                        <textarea class="compila-form" rows="7" placeholder="Write your message here..."></textarea>
+                        <div class="buttonmessage-right">
+                            <div class="send-message"><a target="_blank" href="#">SEND YOUR MESSAGE</a></div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="box">
+            <div class="box1">
+                <h3>CONTACT <span>INFO</span></h3>
+                <ul>
+                    <li>
+                        <h4><i class="fa-solid fa-phone"></i><span>Telefone</span></h4>
+                        <address>
+                            <a class="refs" href="tel:+39 0612345956">(000) 123 456 78 - (000) 123 4567 89 </a>
+                        </address>
+                    </li>
+                    <li>
+                        <h4><i class="fa-solid fa-location-dot"></i><span>Address</span></h4>
+                        <address>
+
+                            <a class="refs" href="https://goo.gl/maps/C16kNQdRPYuhJZ3U9">2046 Blue Spruce Lane
+                                Laurel Canada</a>
+
+                        </address>
+                        <iframe id="maps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4790247161213!2d-79.40928908427291!3d43.825164649311255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2c996e58e517%3A0x4b1fb870347a3044!2sBlue%20Spruce%20Ln%2C%20Markham%2C%20ON%2C%20Canada!5e0!3m2!1sit!2sit!4v1657696872952!5m2!1sit!2sit"
+                            width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li>
+                        <h4><i class="fa-solid fa-envelope"></i><span>E mail</span></h4>
+                        <address>
+                            <a target="_blank" class="refs" href="mailto:rest@gmail.com">rest@gmail.com -
+                                rest@mail.ru</a>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            <div class="box2">
+                <ul>
+                    <h3>LATEST <span>BLOG POSTS</span> </h3>
+                    <div>
+                        <h4><a href="#">Nov 9-2014</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                    </div>
+                    <div>
+                        <h4><a href="#">Sep 8-2014</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                    </div>
+                </ul>
+            </div>
+            <div class="box3">
+                <div>
+                    <h3>PHOTO <span>STREAM</span></h3>
+                    <div class="stream">
+                        <img src="assets/images/photo/photo-1.jpg" alt="">
+                        <img src="assets/images/photo/photo-2.jpg" alt="">
+                        <img src="assets/images/photo/photo-3.jpg" alt="">
+                        <img src="assets/images/photo/photo-4.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="Follow">Follow <span>US</span></h3>
+                    <ul>
+                        <a target="_blank" href="https://twitter.com/starwars" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/epicodeitalia" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><i
+                                class="fa-solid fa-basketball"></i></a>
+                        <a target="_blank"
+                            href="https://www.behance.net/search?search=digital%20art&sdid=GZKZXXYX&mv=search"
+                            target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="copy">
+            Copyright © 2014 - All Rights Reserved.Design and Developed By <span><a target="_blank"
+                    href="https://themefisher.com/">Themefisher</a></span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/animazione-menu.js"></script>
+
 </body>
+
+
+
 </html>
