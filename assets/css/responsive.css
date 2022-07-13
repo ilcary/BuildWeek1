@@ -270,6 +270,20 @@
         float: right;
     }
 
+    .dish-title:after{
+        content: "";
+        display: block;
+        width: 100%;
+        border: 1px dotted #C9C9C9;
+        position: absolute;
+        margin-top: -1.5rem;
+    }
+
+    .dish p{
+        margin-top: -1rem;
+    }
+}
+
 
 
 
@@ -308,7 +322,7 @@
     }
 
 
-}
+
 
 
 
@@ -325,9 +339,6 @@
     .buttonmessage-right{ 
         padding-top: 2rem; 
     } 
-
-
-
 
 
 
@@ -407,13 +418,6 @@
     }
     footer .stream img:nth-of-type(4){
         padding-left:0px;
-    }
-
-
-
-    .container{
-        padding-right: 10rem;
-        padding-left: 10rem;
     }
 
 }

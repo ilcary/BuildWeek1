@@ -614,12 +614,6 @@ footer .copy span {
     line-height: 2.5rem;
 }
 
-.border-bottom{
-    position: absolute;
-    width: 100%;
-    border: 1px dotted #C9C9C9;
-    margin-top: -1.5rem ;
-}
 
 .pricing p {
 
@@ -645,16 +639,12 @@ footer .copy span {
 
 .dish .dish-price{
     color: #938463;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
 }
 
 .dish-title h2 {
     padding: 0px 0px 10px;
-}
-
-#dish-price span{
-    color: #938463;
-    font-size: 1.5rem;
 }
 
 .dish p{
