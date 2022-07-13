@@ -85,12 +85,13 @@
         padding: 1rem 0;
     }
 
-}
+
 
     /*==========BLOG===========*/
 
     .intbtn {
-        margin: 3rem ;
+        margin: 4rem ;
+
     }
     
     #spessore{
@@ -98,7 +99,7 @@
         height: 5rem;
         color: rgba(255, 255, 255, 0.041);
     }
-
+}
 
 
 
@@ -311,7 +312,7 @@
     .dish p{
         margin-top: -1rem;
     }
-}
+
 
 
 
@@ -353,8 +354,8 @@
     .maps{
         display: none;
     }
-
 }
+
 
 
 
@@ -472,15 +473,15 @@
 
     }
 
-}
+
 
 .maps{
     display: block;
 
 }
-
-
 }
+
+
 @media screen and (min-width: 1200px) {
 
     .container{
@@ -513,16 +514,16 @@
         margin: 0rem 0rem;
     }
 
-    
-
-}
-
-    footer :not(.copy) {
+      footer :not(.copy) {
         max-width: 1170px;
     }
 
 
 }
+
+  
+
+
 
 
 

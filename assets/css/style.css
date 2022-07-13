@@ -373,30 +373,30 @@ section {
     font-weight: bold;
 }
 
-.intbtn a {
-    color: #FFF;
-}
-
-.intbtn {
+.intbtn{
     border: 1px solid #FF5E17;
     background-color: #FF5E17;
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 3rem;
     text-align: center;
-    width: 45%;
-
+    width: 17rem;
 }
 
-.intbtn:hover a {
-    color: black;
+.intbtn a{
+    color: #ffffff;
 }
 
-.intbtn:hover {
-    background-color: #ffffff;
-    transition: 0.3s all;
-
-
+.intbtn:hover a{
+    color:#FF5E17;
 }
+
+.intbtn:hover{
+    background-color: #ff5d1700;
+    transition: 0.3s all; 
+}
+
+
 
 
 
@@ -434,6 +434,7 @@ footer a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+
 }
 
 footer i {
@@ -635,7 +636,6 @@ footer .copy span {
 /*==============================MENU PRICING===============================*/
 
 .block {
-    text-align: center;
     margin-top: 5rem;
 }
 
@@ -966,14 +966,13 @@ footer .copy span {
 /*================================MENU HAMBURGER==============================*/
 
 /* Underline */
-li a {
+.menu li a {
     display: inline-block;
     position: relative;
-    color: #FF5E17;
 }
 
-li a:after,
-li a.active1:after {
+.menu li a:after,
+.menu li a.active1:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -986,8 +985,8 @@ li a.active1:after {
     transition: transform 0.25s ease-out;
 }
 
-li a:hover:after,
-li a.active1:hover:after
+.menu li a:hover:after,
+.menu li a.active1:hover:after
  {
     transform: scaleX(1);
     transform-origin: bottom left;
