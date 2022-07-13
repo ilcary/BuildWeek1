@@ -163,7 +163,7 @@ h4 {
 
 section{
     max-width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /*====================SLIDE SHOW X2====================*/
@@ -239,20 +239,47 @@ section{
 
 /*==============================ABOUT US===============================*/
 
+#About_Us {
+    padding: 70px 0px;
+    text-align: center;
 
+}
 
-#blog {
+#background-aboutus {
+    background-color: #eeeeee;
+}
+
+#About_Us h1 {
+    font-size: 2.2rem;
+    padding: 40px 0px 20px;
+}
+
+#About_US span {
+    color: tomato;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+#About_Us article {
+    color: #959595;
+    padding: 20px 0px 0px;
+    line-height:1.6;
+}
+
+/*==============================BLOG===============================*/
+
+.blog {
     text-align: center;
     padding-top: 3rem;
 }
 
-#blog>h2 {
+.blog>h2 {
     font-weight: bold;
     color: #FFF;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.692);
 }
 
-#blog>h2 span {
+.blog>h2 span {
     font-size: 3rem;
 }
 
@@ -302,7 +329,8 @@ section{
 }
 
 .separatore {
-    border: 0.1px solid rgba(77, 54, 36, 0.3);
+
+    border: 0.1px solid #C8C1B3;
     width: 12rem;
     margin: 2.2rem auto;
 }
@@ -310,6 +338,7 @@ section{
 .whiteone {
     border: 0.1px solid rgb(255, 255, 255);
 }
+
 
 #About_Us {
     padding: 50px;
@@ -332,7 +361,8 @@ section{
 
 
 
-/*==============================BLOG===============================*/
+/*============================================BLOG=============================================================================*/
+
 #blog-background {
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
@@ -352,7 +382,7 @@ section{
     z-index: 1;
 }
 
-#Blog{
+.blog{
     position: relative;
     z-index: 3;
 }
@@ -363,35 +393,36 @@ section{
 }
 
 
-#Blog span {
+.blog span {
     color: tomato;
     font-weight: bold;
 }
 
-.intbtn a {
-    color: #FFF;
-}
-
-.intbtn {
+.intbtn{
     border: 1px solid #FF5E17;
     background-color: #FF5E17;
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 3rem;
     text-align: center;
-    width: 45%;
-
+    width: 17rem;
 }
 
-.intbtn:hover a {
-    color: black;
+.intbtn a{
+    color: #ffffff;
 }
 
-.intbtn:hover {
-    background-color: #ffffff;
-    transition: 0.3s all;
-
-
+.intbtn:hover a{
+    color:#FF5E17;
 }
+
+.intbtn:hover{
+    background-color: #ff5d1700;
+    transition: 0.3s all; 
+}
+
+
+
 
 
 /*=================================FOOTER================================*/
@@ -428,6 +459,7 @@ footer a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+
 }
 
 footer i {
@@ -446,23 +478,28 @@ footer ul {
 
 
 
-footer .box1, footer .box3{
+footer .box1,
+footer .box3 {
     padding: 0px 15px 50px;
 }
-footer .box2{
+
+footer .box2 {
     padding: 20px 15px 70px;
 }
-footer .box1 i{
- color: rgb(55, 55, 55)
+
+footer .box1 i {
+    color: rgb(55, 55, 55)
 }
 
-footer .box2 a{
+footer .box2 a {
     color: tomato;
-    font-size:2rem;
+    font-size: 2rem;
 }
-footer .box2 div{
+
+footer .box2 div {
     padding: 20px 0px 0px;
 }
+
 footer .box1,
 footer .box2,
 footer .box3 {
@@ -475,7 +512,6 @@ footer .box1 i {
 
 footer .box2 a {
     color: tomato
-
 }
 
 .follow {
@@ -483,7 +519,7 @@ footer .box2 a {
 }
 
 
-footer .box3 ul a{
+footer .box3 ul a {
     font-size: 3.5rem;
 
 }
@@ -501,7 +537,7 @@ footer .copy {
     letter-spacing: 1.2;
     font-size: 1.2rem;
     font-weight: 600;
-    padding:20px;
+    padding: 20px;
     background-color: #E9E9E9;
     padding: 20px;
     background-color: rgb(158, 114, 148, 0.2);
@@ -511,16 +547,25 @@ footer .copy span {
     font-size: 1.6rem;
 }
 
-.stream{
+.stream {
     padding: 10px 0px 0px;
 }
-.stream img{
+
+.stream img {
     padding: 1rem;
 }
-.stream img:nth-of-type(1){
-    padding-left:0px;
+
+.stream img:nth-of-type(1) {
+    padding-left: 0px;
 }
- /*animazione footer
+
+.refs {
+    text-shadow: none;
+    font-weight: initial;
+    font-size: 1.4rem;
+}
+
+/*animazione footer
 
 
 .stream img {
@@ -534,66 +579,79 @@ footer .copy span {
 
 }*/
 
-.box1{
+.box1 {
     animation: apparizione1 3s;
 }
-.box2{
+
+.box2 {
     animation: apparizione2 2s;
-    
+
 }
-.box3{
+
+.box3 {
     animation: apparizione3 1.7s;
-    
+
 }
+
 @keyframes apparizione1 {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-20px);
     }
-    33%{
+
+    33% {
         opacity: 1;
         transform: translateX(0px);
 
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
 
     }
 }
+
 @keyframes apparizione2 {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-20px);
     }
-    33%{
+
+    33% {
         opacity: 0;
         transform: translateX(-20px);
     }
-    66%{
+
+    66% {
         opacity: 1;
         transform: translateX(0px);
 
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
 
     }
 }
+
 @keyframes apparizione3 {
 
-    0%{
+    0% {
+
         opacity: 0;
         transform: translateX(-20px);
     }
 
-    66%{
+    66% {
+
         opacity: 0;
         transform: translateX(-20px);
     }
 
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
 
@@ -602,10 +660,20 @@ footer .copy span {
 
 /*==============================MENU PRICING===============================*/
 
+.block {
+    margin-top: 5rem;
+}
 
-#menu-price{
+
+.block span {
+    color: #FF5E17;
+}
+
+
+#menu-price {
     padding: 7rem 0;
 }
+
 
 .container {
     padding-right: 1.5rem;
@@ -619,12 +687,14 @@ footer .copy span {
     text-align: center;
 }
 
-#menu-price h1{
+#menu-price h1 {
     padding: 7rem 0rem 2rem;
     font-size: 2.8rem;
 }
 
+
 #menu-price h1 span, #menu-price h3 span{
+
     font-weight: bold;
     color: #FF530A;
 }
@@ -640,48 +710,68 @@ footer .copy span {
 }
 
 
+.dotted-line {
+    position: absolute;
+    width: 80%;
+    border: 1px dotted #C9C9C9;
+}
+
 .pricing p {
 
     font-size: 90%;
     line-height: 2.2rem;
 }
 
-.pricing{
+
+.pricing {
     padding: 6rem 0rem 0rem;
 }
 
-.title{
+.title {
     padding: 3rem 0rem;
 }
 
-.pricing h3, .pricing span{
+.pricing h3,
+.pricing span {
     font-weight: bold;
 }
 
-.dish-title h2{
+.dish-title h2 {
     padding: 0rem 0rem 1rem;
 }
 
-.dish .dish-price{
+.dish .dish-price {
     color: #938463;
     font-size: 1.3rem;
     font-weight: lighter;
+}
+
+.pricing {
+    padding: 60px 0px 0px;
+}
+
+.title {
+    padding: 30px 0px;
+
 }
 
 .dish-title h2 {
     padding: 0px 0px 10px;
 }
 
+
 .dish p{
-    padding: 1rem 0rem 0rem;
+    color: #938463;
+    font-size: 1.5rem;
+     padding: 1rem 0rem 0rem;
 }
 
-.pricing li{
+.pricing li {
     padding: 2rem 0rem;
     list-style: none;
 }
 
-.pricing ul{
+.pricing ul {
     padding: 0rem 0rem 7rem;
 }
 
@@ -716,6 +806,7 @@ footer .copy span {
 
 
 
+
 /*==============================NEWSLETTER===============================*/
 
 #newsletter-background {
@@ -743,26 +834,28 @@ footer .copy span {
     z-index: 3;
 }
 
-#newsletter .serparatore{
+#newsletter .serparatore {
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-#newsletter h1{
+#newsletter h1 {
     padding: 7rem 0rem 2rem;
     font-size: 2.8rem;
 }
 
-#newsletter p{
+#newsletter p {
     padding: 2rem 0rem;
     font-size: 110%;
 }
+
 
 #newsletter h1 span{
     font-weight: bold;
     color: #FF530A;
 }
 
-#newsletter h1, #newsletter p{
+#newsletter h1,
+#newsletter p {
     text-align: center;
     color: #FFF;
 }
@@ -802,7 +895,8 @@ footer .copy span {
     width: 70%;
     padding: 3rem;
     background-color: rgb(119, 183, 183);
-    border: 1px solid rgb(119, 183, 183);;
+    border: 1px solid rgb(119, 183, 183);
+    ;
     color: white;
     font-weight: bold;
 }
@@ -835,7 +929,7 @@ footer .copy span {
     margin-bottom: 1.5rem;
 }
 
-.send-message{
+.send-message {
     background-color: #FF5E17;
     font-size: 1.5rem;
     padding: 2rem;
@@ -844,7 +938,7 @@ footer .copy span {
     margin-top: 2rem;
 }
 
-.send-message a{
+.send-message a {
     color: white;
     font-weight: bold;
 }
@@ -859,4 +953,95 @@ footer .copy span {
     padding: 18px 10px;
     margin-bottom: 1.5rem;
 }
+
+
+
+/*==============================================ANIMAZIONI==========================================
+========MENU ==*/
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*================================MENU HAMBURGER==============================*/
+
+/* Underline */
+.menu li a {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a:after,
+.menu li a.active1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF5E17;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu li a:hover:after,
+.menu li a.active1:hover:after
+ {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
