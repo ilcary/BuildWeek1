@@ -107,6 +107,11 @@
     }
 
 
+    .maps{
+        display: none;
+    }
+
+
 
 
 
@@ -298,6 +303,10 @@
 
     }
 
+    .maps{
+        display: none;
+    }
+
 
 }
 
@@ -407,6 +416,10 @@
         padding-left:0px;
 }
 
+.maps{
+    display: block;
+}
+
 
 
     .container{
@@ -434,6 +447,7 @@
       .gruppo-input{
         margin: 0.5rem 22rem 1rem 22rem ;
     }
+
 
 }
 
