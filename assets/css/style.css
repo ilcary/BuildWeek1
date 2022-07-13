@@ -45,7 +45,6 @@ h4 {
 }
 
 .top-nav {
-    /*da modificare x tablet e desktop margin top e rivedere dove inizia la tendina*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,14 +56,18 @@ h4 {
     padding: 2rem;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.89);
-    position: sticky;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     z-index: 100;
     max-width: 90%;
-    margin: 0 auto;
     font-size: 1.2rem;
 
 
+}
+
+#home.sticked{
+    position: fixed;
+    top: 0px;
 }
 
 .top-nav>div {
@@ -149,6 +152,8 @@ h4 {
     width: 100%;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -170,6 +175,18 @@ section{
 
 #testo span {
     color: #FF5E17;
+}
+
+.swiper-button-next{
+    padding: 1rem;
+    transition: 1s;
+}
+
+.swiper-button-next:hover{
+    background-color: #FF5E17;
+    color: white;
+    border-radius: 35%;
+    
 }
 
 .container-sec {
@@ -195,7 +212,6 @@ section{
 .card-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px 14px;
 }
 
@@ -266,7 +282,7 @@ section{
     line-height:1.6;
 }
 
-/*==============================BLOG===============================*/
+/*============================================BLOG=============================================================================*/
 
 .blog {
     text-align: center;
@@ -339,7 +355,7 @@ section{
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-/*============================================BLOG=============================================================================*/
+
 
 #blog-background {
     background-image: url("../images/blog/blog-bg.jpg");
@@ -433,6 +449,12 @@ footer i {
     color: #b0b0b0;
     padding-right: 1.5rem;
     padding-top: 1rem;
+    transition: 400ms;
+}
+
+footer i:hover{
+    color: #FF4F02;
+    font-size: 4rem;
 }
 
 footer ul {
@@ -461,6 +483,13 @@ footer .box1 .refs {
     text-shadow: none;
     font-weight: initial;
     font-size: 1.4rem;
+    transition: 400ms;
+}
+
+footer .box1 .refs:hover{
+    background-color: rgba(230, 230, 230, 0.705);
+    padding: 1rem;
+
 }
 
 footer .box2 {
@@ -517,6 +546,7 @@ footer .copy a{
     color:#FF4F02;
     font-weight: 600;
 }
+
 
 .box1 {
     animation: apparizione1 3s;
@@ -860,12 +890,21 @@ footer .copy a{
 }
 
 .send-message {
+    border: 1px solid #FF5E17;
     background-color: #FF5E17;
     font-size: 1.5rem;
     padding: 2rem;
     text-align: center;
     margin: 0 auto;
     margin-top: 2rem;
+    transition: 1s;
+}
+
+.send-message:hover{
+    background-color: #ffffff;
+}
+.send-message:hover a{
+    color: #FF5E17;
 }
 
 .send-message a {

@@ -7,7 +7,7 @@
     }
 
     .menu {
-        position: fixed;
+        position: absolute;
         top: 0;
         margin-top: 64px;
         /*da dove parte la tendina*/
@@ -17,7 +17,11 @@
         justify-content: center;
         align-items: center;
     }
-    
+
+    #home.sticked{
+        position: fixed;
+        top: 64px;
+    }
 
     #menu-toggle~.menu li {
         height: 0;
@@ -86,36 +90,43 @@
         padding: 1rem 0;
     }
 
+    .image-content,
+    .card-content {
+        align-items: center;
+    }
+
 
 
     /*==========BLOG===========*/
 
     .intbtn {
-        margin: 4rem ;
+        margin: 4rem;
 
     }
-    
-    #spessore{
+
+    #spessore {
         display: block;
         height: 5rem;
         color: rgba(255, 255, 255, 0.041);
     }
-    .triangle-left{
+
+    .triangle-left {
         display: none;
     }
-    .triangle-right{
+
+    .triangle-right {
         display: none;
     }
-    
+
 }
 
 
 
 /*==============================NEWSLETTER===============================*/
 
-@media screen and (max-width: 767px){
- 
-    .border-bottom{
+@media screen and (max-width: 767px) {
+
+    .border-bottom {
         display: none;
     }
 }
@@ -132,12 +143,13 @@
         margin: 3rem auto;
     }
 
-    
-    .triangle-left{
+
+    .triangle-left {
         right: 50%;
         border-right: 35px solid rgb(255, 255, 255);
     }
-    .triangle-right{
+
+    .triangle-right {
         left: 50%;
         border-left: 35px solid rgb(255, 255, 255);
     }
@@ -151,8 +163,8 @@
 @media screen and (min-width: 768px) {
 
 
-    section{
-        max-width:720px;
+    section {
+        max-width: 720px;
     }
 
     /*===========ABOUT US================*/
@@ -160,15 +172,15 @@
     #About_Us {
         padding: 100px 0px;
     }
-    
+
     #About_Us h1 {
         font-size: 3.6rem;
     }
-    
+
     #About_US span {
         font-size: 4.5rem;
     }
-    
+
     #About_Us article {
         padding: 20px 0px 40px;
     }
@@ -176,15 +188,7 @@
     /*==========BLOG===========*/
 
 
-    .triangle-left{
-        width: 0;
-        height: 0;
-        border-top: 25px solid transparent;
-        border-bottom: 25px solid transparent;
-        position: absolute;
-        z-index: 1;
-    }
-    .triangle-right{
+    .triangle-left {
         width: 0;
         height: 0;
         border-top: 25px solid transparent;
@@ -193,7 +197,16 @@
         z-index: 1;
     }
 
-    .img-cornice{
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .img-cornice {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -213,20 +226,20 @@
         margin: 0 auto;
         background-color: rgba(245, 222, 179, 0);
         text-align: center;
-        
+
     }
 
-    .button-blog{
+    .button-blog {
         margin-bottom: 3rem;
     }
 
-  
-    #spessore{
+
+    #spessore {
         display: block;
         height: 5rem;
         color: rgba(255, 255, 255, 0.041);
     }
-   
+
     .img-cornice {
         width: 50%;
     }
@@ -239,82 +252,83 @@
 
     .top-nav {
         font-size: 1.6rem;
-       
+
     }
-    
-    
+
+
     /*================CONTACT US================*/
 
 
-    #contact-us h1{
+    #contact-us h1 {
         font-size: 4.2rem;
     }
 
-    .form-contact input, .form-contact textarea{
+    .form-contact input,
+    .form-contact textarea {
         width: 100%;
 
     }
 
-    .send-message{
+    .send-message {
         width: 65%;
     }
-    
+
     /*==============NEWSLETTER==============*/
-    
-    .gruppo-input{
+
+    .gruppo-input {
         display: flex;
-        margin: 0.5rem  3rem -2rem 3rem ;
+        margin: 0.5rem 3rem -2rem 3rem;
     }
-    
-    .compila-form{
+
+    .compila-form {
         width: 70%;
     }
 
-    .button-subscribe{
+    .button-subscribe {
         width: 140%;
     }
 
-    #newsletter h1{
+    #newsletter h1 {
         font-size: 4.2rem;
         padding: 5rem 0rem 2rem;
     }
 
-    #newsletter p{
+    #newsletter p {
         padding: 1.5rem 0rem;
     }
-    
-    
+
+
     /*==============================MENU PRICING===============================*/
 
 
     .container {
-       padding:0px;
+        padding: 0px;
     }
 
-    #menu-price h1{
+    #menu-price h1 {
         font-size: 4.2rem;
     }
 
-    .dish{
+    .dish {
         box-sizing: border-box;
     }
 
-    .dish-title{
+    .dish-title {
         position: relative;
     }
-    
-    .dish-title h2{
+
+    .dish-title h2 {
         display: inline-block;
         position: relative;
         z-index: 99;
         background-color: white;
     }
 
-    .dish-title span{
+    .dish-title span {
         float: right;
     }
 
-    .dish-title:after{
+    .dish-title:after {
         content: "";
         display: block;
         width: 100%;
@@ -323,7 +337,7 @@
         margin-top: -1.5rem;
     }
 
-    .dish p{
+    .dish p {
         margin-top: -1rem;
     }
 
@@ -365,33 +379,35 @@
 
     }
 
-    .maps{
-        display: none;
-    }
 
-/*==============FOOTER=================*/
 
-    footer > .box{
+    /*==============FOOTER=================*/
+
+    footer>.box {
         margin: 0 auto;
     }
-    footer :not(.copy){
-        max-width:750px;
+
+    footer :not(.copy) {
+        max-width: 750px;
     }
-    footer h3{
+
+    footer h3 {
         padding-bottom: 10px;
     }
-    
-    footer .box1, footer .box2, footer .box3{
-        padding:0px 15px 20px;
+
+    footer .box1,
+    footer .box2,
+    footer .box3 {
+        padding: 0px 15px 20px;
     }
 
-    footer .box1 ul{
+    footer .box1 ul {
         display: flex;
         padding-bottom: 20px;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
-    footer .copy{
+    footer .copy {
         padding-top: 30px;
     }
 
@@ -410,14 +426,14 @@
     }
 
 
-    .buttonmessage-right{
+    .buttonmessage-right {
         display: flex;
-        justify-content: flex-end;   
-        padding-top: 2rem; 
+        justify-content: flex-end;
+        padding-top: 2rem;
     }
 
 
-    .send-message{
+    .send-message {
         width: 50%;
     }
 
@@ -434,44 +450,47 @@
 
 
     }
-/*===========ABOUT US==================*/
 
-    #About_Us{
-        max-width:940px;
+    /*===========ABOUT US==================*/
+
+    #About_Us {
+        max-width: 940px;
     }
 
-/*========================blog===========================*/
+    /*========================blog===========================*/
 
 
-.triangle-right{
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-left: 35px solid rgb(255, 255, 255);
-    border-bottom: 25px solid transparent;
-    position: absolute;
-    z-index: 1;
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 35px solid rgb(255, 255, 255);
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        z-index: 1;
 
-}
-.triangle-left{
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-right: 35px solid rgb(255, 255, 255);
-    border-bottom: 25px solid transparent;
-    position: absolute;
-    z-index: 1;
+    }
 
-}
-.img-cornice{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 35px solid rgb(255, 255, 255);
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        z-index: 1;
 
-.asinistra{
-    justify-content: flex-start;
-}
+    }
+
+    .img-cornice {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .asinistra {
+        justify-content: flex-start;
+    }
 
 
 
@@ -504,10 +523,10 @@
         max-width: 920px;
     }
 
-/*=================FOOTER=========*/
+    /*=================FOOTER=========*/
 
-    footer :not(.copy){
-        max-width:970px;
+    footer :not(.copy) {
+        max-width: 970px;
     }
 
     footer .box {
@@ -522,51 +541,54 @@
         flex-direction: column;
     }
 
-    .box1, .box2, .box3{
-        width:30%;
+    .box1,
+    .box2,
+    .box3 {
+        width: 30%;
     }
 
-    footer .stream img:nth-of-type(4){
-        padding-left:0px;
+    footer .stream img:nth-of-type(4) {
+        padding-left: 0px;
 
     }
 
-    .maps{
-    display: block;
+    .maps {
+        display: block;
+
 
     }
-}  
+}
 
 
 @media screen and (min-width: 1200px) {
 
-    section{
-        max-width:1140px;
+    section {
+        max-width: 1140px;
     }
 
-    .description{
+    .description {
         padding-right: 15rem;
         padding-left: 15rem;
     }
-    
-      .gruppo-input{
-        margin: 0.5rem 22rem 1rem 22rem ;
+
+    .gruppo-input {
+        margin: 0.5rem 22rem 1rem 22rem;
     }
 
 
 
-    .buttonmessage-right{
+    .buttonmessage-right {
         display: flex;
-        justify-content: flex-end;   
-        padding-top: 2rem; 
+        justify-content: flex-end;
+        padding-top: 2rem;
     }
 
-    .buttonmessage-right{
+    .buttonmessage-right {
         display: flex;
-        justify-content: flex-end;   
+        justify-content: flex-end;
     }
 
-    .send-message{
+    .send-message {
         margin: 0rem 0rem;
     }
 
@@ -576,23 +598,3 @@
 
 
 }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
