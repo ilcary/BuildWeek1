@@ -229,7 +229,34 @@ section {
 
 /*==============================ABOUT US===============================*/
 
+#About_Us {
+    padding: 70px 0px;
+    text-align: center;
 
+}
+
+#background-aboutus {
+    background-color: #eeeeee;
+}
+
+#About_Us h1 {
+    font-size: 2.2rem;
+    padding: 40px 0px 20px;
+}
+
+#About_US span {
+    color: tomato;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+#About_Us article {
+    color: #959595;
+    padding: 20px 0px 0px;
+    line-height:1.6;
+}
+
+/*==============================BLOG===============================*/
 
 .blog {
     text-align: center;
@@ -292,7 +319,7 @@ section {
 }
 
 .separatore {
-    border: 0.1px solid rgb(77, 54, 36);
+    border: 0.1px solid #C8C1B3;
     width: 12rem;
     margin: 2.2rem auto;
 }
@@ -300,6 +327,7 @@ section {
 .whiteone {
     border: 0.1px solid rgb(255, 255, 255);
 }
+
 
 #About_Us {
     padding: 50px;
@@ -323,6 +351,7 @@ section {
 
 
 /*============================================BLOG=============================================================================*/
+
 #blog-background {
     background-image: url("../images/blog/blog-bg.jpg");
     background-repeat: no-repeat;
