@@ -292,7 +292,7 @@ section{
 }
 
 .separatore {
-    border: 0.1px solid rgb(77, 54, 36);
+    border: 0.1px solid rgba(77, 54, 36, 0.3);
     width: 12rem;
     margin: 2.2rem auto;
 }
@@ -557,14 +557,17 @@ footer .copy span {
     }
 }
 @keyframes apparizione3 {
+
     0%{
         opacity: 0;
         transform: translateX(-20px);
     }
+
     66%{
         opacity: 0;
         transform: translateX(-20px);
-    };
+    }
+
     100%{
         opacity: 1;
         transform: translateX(0px);
@@ -577,10 +580,6 @@ footer .copy span {
 
 #menu-price{
     padding: 7rem 0;
-}
-#menu-price {
-    padding: 70px 0px;
-
 }
 
 .container {
@@ -600,9 +599,11 @@ footer .copy span {
     font-size: 2.8rem;
 }
 
-#menu-price span{
+#menu-price h1 span, #menu-price h3 span{
     font-weight: bold;
+    color: #FF530A;
 }
+
 
 .description,
 .pricing p {
@@ -613,21 +614,18 @@ footer .copy span {
     line-height: 2.5rem;
 }
 
-
-.dotted-line{
+.border-bottom{
     position: absolute;
-    width: 80%;
+    width: 100%;
     border: 1px dotted #C9C9C9;
+    margin-top: -1.5rem ;
 }
-
-
 
 .pricing p {
 
     font-size: 90%;
     line-height: 2.2rem;
 }
-
 
 .pricing{
     padding: 6rem 0rem 0rem;
@@ -649,24 +647,15 @@ footer .copy span {
     color: #938463;
     font-size: 1.5rem;
 }
-.pricing {
-    padding: 60px 0px 0px;
-}
-
-.title {
-    padding: 30px 0px;
-}
 
 .dish-title h2 {
     padding: 0px 0px 10px;
 }
 
-.dish strong {
-
+#dish-price span{
     color: #938463;
     font-size: 1.5rem;
 }
-
 
 .dish p{
     padding: 1rem 0rem 0rem;
@@ -695,8 +684,11 @@ footer .copy span {
     color: #FF5E17;
 }
 
-.more-info:hover, .more-info a:hover{
-    color: rgb(255, 255, 255);
+.more-info:hover a{
+    color:white;
+}
+
+.more-info:hover{
     background-color: #FF5E17;
     transition: 0.3s all; 
 }
@@ -706,29 +698,6 @@ footer .copy span {
     flex-direction: column;
     align-items: flex-end;
 }
-
-.dish p {
-    padding: 1rem 0 0;
-}
-
-.pricing li {
-    padding: 2rem 0;
-    list-style: none;
-}
-
-.pricing ul {
-    padding: 0 0 7rem;
-}
-
-
-.button-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-
-}
-
 
 
 
@@ -757,8 +726,9 @@ footer .copy span {
     font-size: 110%;
 }
 
-#newsletter span{
+#newsletter h1 span{
     font-weight: bold;
+    color: #FF530A;
 }
 
 #newsletter h1, #newsletter p{
@@ -813,8 +783,9 @@ footer .copy span {
 
 
 
-#contact-us h3, #contact-us span{
+#contact-us h1 span, #contact-us h3 span{
     font-weight: bold;
+    color: #FF530A;
 }
 
 #contact-us h1{
@@ -823,10 +794,9 @@ footer .copy span {
     font-size: 2.8rem;
 }
 
-
-
 #contact-us h3{
     padding: 2rem 0rem;
+    font-weight: bold;
 }
 
 #full-name, #enter-email, #contact-us textarea{
