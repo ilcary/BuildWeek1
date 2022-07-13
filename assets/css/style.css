@@ -41,7 +41,7 @@ h4 {
 /*============MENU HAMBURGER=============*/
 
 #resturant {
-    padding-right: 8rem;
+    padding-right: 2rem;
 }
 
 .top-nav {
@@ -933,4 +933,5 @@ footer .copy a{
     transform: translateY(0);
     opacity: 1;
   }
+
 

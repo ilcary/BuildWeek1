@@ -17,6 +17,7 @@
         justify-content: center;
         align-items: center;
     }
+    
 
     #menu-toggle~.menu li {
         height: 0;
@@ -99,6 +100,13 @@
         height: 5rem;
         color: rgba(255, 255, 255, 0.041);
     }
+    .triangle-left{
+        display: none;
+    }
+    .triangle-right{
+        display: none;
+    }
+    
 }
 
 
@@ -110,14 +118,6 @@
     .border-bottom{
         display: none;
     }
-
-
-
-    .maps{
-        display: none;
-    }
-
-
 }
 
 
@@ -131,6 +131,21 @@
     .intbtn {
         margin: 3rem auto;
     }
+
+    
+    .triangle-left{
+        right: 50%;
+        border-right: 35px solid rgb(255, 255, 255);
+    }
+    .triangle-right{
+        left: 50%;
+        border-left: 35px solid rgb(255, 255, 255);
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -155,6 +170,33 @@
     }
 
     /*==========BLOG===========*/
+
+
+    .triangle-left{
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        z-index: 1;
+    }
+    .triangle-right{
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .img-cornice{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+
     .container-blog {
         display: grid;
     }
@@ -192,7 +234,7 @@
     }
 
     .top-nav {
-        font-size: 1rem;
+        font-size: 1.6rem;
        
     }
     
@@ -349,6 +391,7 @@
     footer .copy{
         padding-top: 30px;
     }
+
 }
 
 
@@ -395,6 +438,40 @@
     }
 
 /*========================blog===========================*/
+
+
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 35px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    z-index: 1;
+
+}
+.triangle-left{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 35px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    z-index: 1;
+
+}
+.img-cornice{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.asinistra{
+    justify-content: flex-start;
+}
+
+
+
 
 
 
