@@ -53,3 +53,18 @@ window.addEventListener("scroll", reveal);
 
 /*==========================================menu hamburger=====================================*/
 
+function plsStick(elemento){
+  let getSticky = document.querySelector(elemento);
+  let headerHeight = document.querySelector('#bgheader').clientHeight;
+  let navHeight = document.querySelector('#top-nav').clientHeight;
+  let correctHeight = headerHeight - navHeight;
+
+  if(document.body.scrollTop > correctHeight && 
+      !getSticky.classList.contains('sticked')){
+      getSticky.classList.add('sticked');
+  }else if(document.body.scrollTop < correctHeight - 1){
+      getSticky.classList.remove('sticked');
+  }
+  console.log(getSticky)
+  console.log(document.body.scrollTop)
+}
