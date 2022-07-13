@@ -423,7 +423,7 @@ footer h4 {
     font-weight: 500;
 }
 
-footer a {
+.box2 a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -908,7 +908,8 @@ footer .copy a{
 
 .active.fade-right {
     animation: fade-right 1s ease-in;
-}
+  }
+
 
 @keyframes fade-bottom {
     0% {
@@ -931,8 +932,18 @@ footer .copy a{
     100% {
         transform: translateX(0);
         opacity: 1;
-    }
+    }  
 }
+@keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 /*================================MENU HAMBURGER==============================*/
 
@@ -943,7 +954,7 @@ footer .copy a{
 }
 
 .menu li a:after,
-.menu li a.active1:after {
+.menu .active {
     content: '';
     position: absolute;
     width: 100%;
@@ -957,7 +968,7 @@ footer .copy a{
 }
 
 .menu li a:hover:after,
-.menu li a.active1:hover:after
+.menu .active
  {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -975,4 +986,4 @@ footer .copy a{
     opacity: 1;
   }
 
-
+  

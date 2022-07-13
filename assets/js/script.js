@@ -32,17 +32,17 @@ var swiper = new Swiper(".slide-content", {
 
 /*==========================================menu hamburger=====================================*/
 
-function plsStick(elemento){
+function plsStick(elemento) {
   let getSticky = document.querySelector(elemento);
   let headerHeight = document.querySelector('#bgheader').clientHeight;
   let navHeight = document.querySelector('#home').clientHeight;
   let correctHeight = headerHeight - navHeight;
 
-  if(document.body.scrollTop > correctHeight && 
-      !getSticky.classList.contains('sticked')){
-      getSticky.classList.add('sticked');
-  }else if(document.body.scrollTop < correctHeight - 1){
-      getSticky.classList.remove('sticked');
+  if (document.body.scrollTop > correctHeight &&
+    !getSticky.classList.contains('sticked')) {
+    getSticky.classList.add('sticked');
+  } else if (document.body.scrollTop < correctHeight - 1) {
+    getSticky.classList.remove('sticked');
   }
   console.log(getSticky)
   console.log(document.body.scrollTop)
@@ -69,4 +69,43 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+
+
+//===================newsletter =============================
+
+function revealnews() {
+  var revealsnews = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < revealsnews.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealsnews[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      revealsnews[i].classList.add("active");
+    } else {
+      revealsnews[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealnews);
+
+let section = document.querySelectorAll('div');
+let menu = document.querySelectorAll('li a');
+window.onscroll = () => {
+  section.forEach(i => {
+    let top = window.scrollY;
+    let offset = i.offsetTop - 150;
+    let height = i.offsetHeight;
+    let id = i.getAttribute('id');
+    if (top >= offset && top < offset + height) {
+      menu.forEach(link => {
+        link.classList.remove('active');
+        document.querySelector('li a[href*=' + id + ']')
+          .classList.add('active');
+      });
+    }
+  });
+};
 
