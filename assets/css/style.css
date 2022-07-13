@@ -148,10 +148,20 @@ h4 {
     height: 25%;
     width: 100%;
     background-size: cover;
+    position: relative;
 
 }
 
-section {
+#bgheader::before{
+    background: url("../images/overlay-pattern.png") rgba(0, 0, 0, 0.1);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+section{
     max-width: 90%;
     margin: 0 auto;
 }
@@ -337,9 +347,24 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
+    position: relative;
 
 }
+
+#blog-background::before{
+    background: url("../images/overlay-pattern2.png") rgba(0, 0, 0, 0.1);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.blog{
+    position: relative;
+    z-index: 3;
+}
+
 
 .immagine-testo {
     background-color: white;
@@ -720,8 +745,24 @@ footer .copy a{
     background-attachment: fixed;
     background-size: cover;
     padding: 100px 0;
+    position: relative;
+    z-index: 0;
 }
 
+#newsletter-background::before{
+    background: url("../images/overlay-pattern2.png") rgba(0, 0, 0, 0.1);
+    content: "";
+    position: absolute;
+    margin-top: -10rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#newsletter{
+    position: relative;
+    z-index: 3;
+}
 
 #newsletter .serparatore {
     border: 0.1px solid rgb(255, 255, 255);
