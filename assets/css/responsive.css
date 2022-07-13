@@ -265,7 +265,7 @@
     }
 
     .top-nav {
-        font-size: 1rem;
+        font-size: 1.6rem;
        
     }
     
@@ -452,7 +452,7 @@
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
-    border-right: 35px solid rgb(255, 255, 255);
+    border-left: 35px solid rgb(255, 255, 255);
     border-bottom: 25px solid transparent;
     position: absolute;
     z-index: 1;
@@ -472,6 +472,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.asinistra{
+    justify-content: flex-start;
 }
 
 
