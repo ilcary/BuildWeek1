@@ -255,7 +255,7 @@ section{
 }
 
 #About_US span {
-    color: #FF5E17;
+    color: #FF530A;
     font-weight: bold;
     font-size: 2.8rem;
 }
@@ -409,7 +409,7 @@ footer {
 }
 
 footer span {
-    color: #FF5E17;
+    color: #FF4F02;
 }
 
 footer h3 {
@@ -468,7 +468,7 @@ footer .box2 {
 }
 
 footer .box2 a {
-    color: #FF5E17;
+    color: #FF4F02;
     font-size: 2rem;
 }
 
@@ -514,7 +514,7 @@ footer .copy span {
 
 footer .copy a{
     font-size: 1.5rem;
-    color:#FF5E17;
+    color:#FF4F02;
     font-weight: 600;
 }
 
