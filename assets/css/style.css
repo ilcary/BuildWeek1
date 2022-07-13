@@ -236,7 +236,7 @@ section {
 }
 
 #background-aboutus {
-    background-color: #eeeeee;
+    background-color: #F6F6F6;
 }
 
 #About_Us h1 {
@@ -245,7 +245,7 @@ section {
 }
 
 #About_US span {
-    color: tomato;
+    color: #FF5E17;
     font-weight: bold;
     font-size: 2.8rem;
 }
@@ -329,28 +329,6 @@ section {
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-
-#About_Us {
-    padding: 50px;
-    text-align: center;
-
-}
-
-#background-aboutus {
-    background-color: #eeeeee;
-}
-
-#About_Us h1 {
-    font-size: 2.5rem;
-}
-
-#About_US span {
-    color: tomato;
-    font-weight: bold;
-}
-
-
-
 /*============================================BLOG=============================================================================*/
 
 #blog-background {
@@ -369,7 +347,7 @@ section {
 
 
 .blog span {
-    color: tomato;
+    color: #FF5E17;
     font-weight: bold;
 }
 
@@ -402,21 +380,11 @@ section {
 
 /*=================================FOOTER================================*/
 footer {
-
     font-size: 1.4rem;
 }
 
-footer p,
-footer address {
-    line-height: 1.4;
-}
-
-.box {
-    padding: 70px 0;
-}
-
 footer span {
-    color: tomato;
+    color: #FF5E17;
 }
 
 footer h3 {
@@ -434,7 +402,6 @@ footer a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-
 }
 
 footer i {
@@ -447,27 +414,36 @@ footer ul {
     padding: 20px, 0px, 0px;
 }
 
-.stream {
-    padding: 20px, 0px, 0px;
+footer ul li {
+    list-style: none;
+    padding: 20px 0px 0px;
 }
 
-
+footer .box {
+    padding: 70px 0;
+}
 
 footer .box1,
 footer .box3 {
     padding: 0px 15px 50px;
 }
 
-footer .box2 {
-    padding: 20px 15px 70px;
-}
-
 footer .box1 i {
     color: rgb(55, 55, 55)
 }
 
+footer .box1 .refs {
+    text-shadow: none;
+    font-weight: initial;
+    font-size: 1.4rem;
+}
+
+footer .box2 {
+    padding: 20px 15px 70px;
+}
+
 footer .box2 a {
-    color: tomato;
+    color: #FF5E17;
     font-size: 2rem;
 }
 
@@ -475,35 +451,25 @@ footer .box2 div {
     padding: 20px 0px 0px;
 }
 
-footer .box1,
-footer .box2,
-footer .box3 {
-    padding: 0px 15px 50px;
+footer .box3 .stream {
+    padding: 10px 0px 0px;
 }
 
-footer .box1 i {
-    color: rgb(55, 55, 55)
+footer .box3 .stream img {
+    padding: 1rem;
 }
 
-footer .box2 a {
-    color: tomato
+footer .box3 .stream img:nth-of-type(1) {
+    padding-left: 0px;
 }
 
-.follow {
+footer .box3 .follow {
     padding: 30px 0px 15px;
 }
-
 
 footer .box3 ul a {
     font-size: 3.5rem;
 
-}
-
-
-
-footer ul li {
-    list-style: none;
-    padding: 20px 0px 0px
 }
 
 footer .copy {
@@ -515,44 +481,17 @@ footer .copy {
     padding: 20px;
     background-color: #E9E9E9;
     padding: 20px;
-    background-color: rgb(158, 114, 148, 0.2);
 }
 
 footer .copy span {
     font-size: 1.6rem;
 }
 
-.stream {
-    padding: 10px 0px 0px;
+footer .copy a{
+    font-size: 1.5rem;
+    color:#FF5E17;
+    font-weight: 600;
 }
-
-.stream img {
-    padding: 1rem;
-}
-
-.stream img:nth-of-type(1) {
-    padding-left: 0px;
-}
-
-.refs {
-    text-shadow: none;
-    font-weight: initial;
-    font-size: 1.4rem;
-}
-
-/*animazione footer
-
-
-.stream img {
-    padding: 1rem;
-}
-
-/*.stream{
-   max-width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-
-}*/
 
 .box1 {
     animation: apparizione1 3s;
@@ -560,12 +499,10 @@ footer .copy span {
 
 .box2 {
     animation: apparizione2 2s;
-
 }
 
 .box3 {
     animation: apparizione3 1.7s;
-
 }
 
 @keyframes apparizione1 {
@@ -577,13 +514,11 @@ footer .copy span {
     33% {
         opacity: 1;
         transform: translateX(0px);
-
     }
 
     100% {
         opacity: 1;
         transform: translateX(0px);
-
     }
 }
 
@@ -601,18 +536,15 @@ footer .copy span {
     66% {
         opacity: 1;
         transform: translateX(0px);
-
     }
 
     100% {
         opacity: 1;
         transform: translateX(0px);
-
     }
 }
 
 @keyframes apparizione3 {
-
     0% {
 
         opacity: 0;
@@ -620,7 +552,6 @@ footer .copy span {
     }
 
     66% {
-
         opacity: 0;
         transform: translateX(-20px);
     }
@@ -629,7 +560,6 @@ footer .copy span {
     100% {
         opacity: 1;
         transform: translateX(0px);
-
     }
 }
 

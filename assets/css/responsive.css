@@ -126,7 +126,7 @@
 /*==================TABLET=================*/
 
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     .intbtn {
         margin: 3rem auto;
@@ -148,7 +148,7 @@
 
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
     /*===========ABOUT US================*/
 
@@ -201,16 +201,6 @@
         display: grid;
     }
 
-    footer .box1,
-    footer .box2,
-    footer .box3 {
-        padding: 0px 15px 20px;
-    }
-
-    footer .box1 ul {
-        display: flex;
-    }
-
     .immagine-testo {
         display: flex;
         flex-direction: row;
@@ -233,27 +223,6 @@
         color: rgba(255, 255, 255, 0.041);
     }
    
-
-
-    footer > .box{
-        margin: 0 auto;
-    }
-    footer :not(.copy){
-        max-width:768px;
-    }
-    footer h3{
-        padding-bottom: 10px;
-    }
-    
-    footer .box1, footer .box2, footer .box3{
-        padding:0px 15px 20px;
-    }
-
-    footer .box1 ul{
-        display: flex;
-        padding-bottom: 20px;
-        justify-content:space-between;
-    }
     .img-cornice {
         width: 50%;
     }
@@ -270,7 +239,7 @@
     }
     
     
-    /*==============================CONTACT US===============================*/
+    /*================CONTACT US================*/
 
 
     #contact-us h1{
@@ -393,6 +362,36 @@
 
     }
 
+    .maps{
+        display: none;
+    }
+
+/*==============FOOTER=================*/
+
+    footer > .box{
+        margin: 0 auto;
+    }
+    footer :not(.copy){
+        max-width:750px;
+    }
+    footer h3{
+        padding-bottom: 10px;
+    }
+    
+    footer .box1, footer .box2, footer .box3{
+        padding:0px 15px 20px;
+    }
+
+    footer .box1 ul{
+        display: flex;
+        padding-bottom: 20px;
+        justify-content:space-between;
+    }
+
+    footer .copy{
+        padding-top: 30px;
+    }
+
 }
 
 
@@ -418,13 +417,6 @@
     .send-message{
         width: 50%;
     }
-
-
-
-    footer :not(.copy) {
-        max-width: 1200px;
-    }
-
 
     section {
         max-width: 940px;
@@ -536,23 +528,16 @@
         width:30%;
     }
 
-    footer .box2 {
-        flex-shrink: 3;
-
-    }
-
     footer .stream img:nth-of-type(4){
         padding-left:0px;
 
     }
 
-
-
-.maps{
+    .maps{
     display: block;
 
-}
-}
+    }
+}  
 
 
 @media screen and (min-width: 1200px) {
@@ -587,7 +572,7 @@
         margin: 0rem 0rem;
     }
 
-      footer :not(.copy) {
+    footer :not(.copy) {
         max-width: 1170px;
     }
 
