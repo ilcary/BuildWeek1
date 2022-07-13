@@ -30,7 +30,7 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
-/*==============================================ANIMAZIONI=====================================*/
+/*==============================================ANIMAZIONI========MENU=============================*/
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
