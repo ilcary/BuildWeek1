@@ -110,19 +110,48 @@
         display: none;
     }
 
+
+
+    .maps{
+        display: none;
+    }
+
+
 }
 
 
 
 
 /*==================TABLET=================*/
-@media screen and (min-width: 768px) and (max-width: 920px) {
+
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
     .intbtn {
         margin: 3rem auto;
     }
 }
 
 @media screen and (min-width: 767px) {
+
+    /*===========ABOUT US================*/
+
+    #About_Us {
+        padding: 100px 0px;
+        max-width:720px;
+    }
+    
+    #About_Us h1 {
+        font-size: 3.6rem;
+    }
+    
+    #About_US span {
+        font-size: 4.5rem;
+    }
+    
+    #About_Us article {
+        padding: 20px 0px 40px;
+    }
 
     /*==========BLOG===========*/
     .container-blog {
@@ -321,18 +350,28 @@
 
     }
 
+    .maps{
+        display: none;
+    }
 
-
+}
 
 
 
 
 /*==================DESKTOP=================*/
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 992px) {
 
     .top-nav {
         font-size: 2rem;
+    }
+
+
+    .buttonmessage-right{
+        display: flex;
+        justify-content: flex-end;   
+        padding-top: 2rem; 
     }
 
 
@@ -347,9 +386,8 @@
     }
 
 
-
     section {
-        max-width: 920px;
+        max-width: 940px;
         margin: 0 auto;
     }
 
@@ -360,6 +398,11 @@
         gap: 0;
 
 
+    }
+/*===========ABOUT US==================*/
+
+    #About_Us{
+        max-width:940px;
     }
 
 /*========================blog===========================*/
@@ -392,14 +435,21 @@
         max-width: 920px;
     }
 
+    .container{
+        padding:0px;
+        max-width:940px;
+    }
+
+/*=================FOOTER=========*/
+
     footer :not(.copy){
-        max-width:920px;
+        max-width:970px;
     }
 
     footer .box {
 
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 auto;
     }
 
@@ -416,20 +466,25 @@
         flex-shrink: 3;
 
     }
+
     footer .stream img:nth-of-type(4){
         padding-left:0px;
+
     }
 
 }
 
+.maps{
+    display: block;
 
+}
+
+
+}
 @media screen and (min-width: 1200px) {
 
     .container{
-        padding-right: 0rem;
-        padding-left: 0rem;
-        margin-left: -11rem;
-        margin-right: -11rem;
+       max-width:1140px;
     }
 
     .description{
@@ -440,6 +495,7 @@
       .gruppo-input{
         margin: 0.5rem 22rem 1rem 22rem ;
     }
+
 
 
     .buttonmessage-right{
@@ -461,6 +517,12 @@
 
 }
 
+    footer :not(.copy) {
+        max-width: 1170px;
+    }
+
+
+}
 
 
 
