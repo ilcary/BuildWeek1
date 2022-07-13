@@ -150,11 +150,15 @@
 
 @media screen and (min-width: 768px) {
 
+
+    section{
+        max-width:720px;
+    }
+
     /*===========ABOUT US================*/
 
     #About_Us {
         padding: 100px 0px;
-        max-width:720px;
     }
     
     #About_Us h1 {
@@ -284,8 +288,7 @@
 
 
     .container {
-        padding-right: 2.5rem;
-        padding-left: 2.5rem;
+       padding:0px;
     }
 
     #menu-price h1{
@@ -501,11 +504,6 @@
         max-width: 920px;
     }
 
-    .container{
-        padding:0px;
-        max-width:940px;
-    }
-
 /*=================FOOTER=========*/
 
     footer :not(.copy){
@@ -542,8 +540,8 @@
 
 @media screen and (min-width: 1200px) {
 
-    .container{
-       max-width:1140px;
+    section{
+        max-width:1140px;
     }
 
     .description{
