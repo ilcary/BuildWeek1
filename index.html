@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resturant</title>
+    <meta name="description" content="ristorante casareccio">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -14,9 +15,10 @@
 </head>
 
 <body>
+    <!--====================MENU HAMBURGER =============================-->    <div id="home" class="reveal"></div> 
 
     <div id="bgheader"></div>
-    <section class="top-nav">
+    <section class="top-nav" id="home">
         <div>
             <img id="resturant" src="./assets/images/logo.png" alt="logo resturant">
         </div>
@@ -25,20 +27,20 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">HOME</a></li>
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">ABOUT US</a></li>
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">BLOG</a></li>
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">MENU</a></li>
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">NEWS</a></li>
-            <li><a href="./chi-siamo.html" target="_blank" class="menuref">CONTACTS</a></li>
+            <li><a href="#home" class="menuref">HOME</a></li>
+            <li><a href="#About_Us"  class="menuref">ABOUT US</a></li>
+            <li><a href="#Blog"   class="menuref">BLOG</a></li>
+            <li><a href="#menu"  class="menuref">MENU</a></li>
+            <li><a href="#news"  class="menuref">NEWS</a></li>
+            <li><a href="#contacts"  class="menuref">CONTACTS</a></li>
 
         </ul>
     </section>
 
 
 
-    <div class="container-sec">
-        <div id="testo">
+    <div class="container-sec" id="home">
+        <div id="testo" class="reveal">
             <div>
                 <h3>FEATURED <span>WORKS</span></h3>
 
@@ -132,12 +134,12 @@
 
 
 
-        <!--====================BLOG============================-->
+        <!--====================BLOG============================--> <div id="Blog" class="reveal"></div>
         <div id="blog-background">
-            <section id="Blog">
+            <section class="blog">
 
 
-                <h2>Latest <span>From</span> the <span>Blog</span></h2>
+                 <h2>Latest <span>From</span> the <span>Blog</span></h2>
                 <div class="separatore whiteone"></div>
                 <div class="container-blog">
 
@@ -237,9 +239,9 @@
 
 
 
-    <!--=========================== MENU ========================-->
+    <!--=========================== MENU ========================--><div id="menu" class="reveal" ></div>
 
-    <section id="menu-price">
+    <section class="reveal fade-bottom" id="menu-price">
         <div class="container">
             <div class="row">
                 <div class="block">
@@ -364,9 +366,9 @@
     </section>
 
 
-    <!--=============================NEWSLETTER =================================-->
+    <!--=============================NEWSLETTER =================================--> <div id="news" class="reveal"></div>
 
-    <div id="newsletter-background">
+    <div id="newsletter-background ">
         <section id="newsletter">
             <div class="container">
                 <div class="row">
@@ -395,7 +397,7 @@
         </section>
     </div>
 
-    <!--=============================CONTACT US=================================-->
+    <!--=============================CONTACT US=================================--><div id="contacts" class="reveal"></div>
 
     <section id="contact-us">
         <div class="container">
@@ -425,6 +427,7 @@
 
 
     <footer>
+        <section >
         <div class="box">
             <div class="box1">
                 <h3>CONTACT <span>INFO</span></h3>
@@ -432,7 +435,7 @@
                     <li>
                         <h4><i class="fa-solid fa-phone"></i><span>Telefone</span></h4>
                         <address>
-                            (000) 123 456 78- (000) 123 4567 89
+                            <a class="refs" href="tel:+39 0612345956">(000) 123 456 78</a>(000) 123 456 78- (000) 123 4567 89
                         </address>
                     </li>
                     <li>
@@ -440,11 +443,12 @@
                         <address>
                             2046 Blue Spruce Lane Laurel Canada
                         </address>
+                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4790247161213!2d-79.40928908427291!3d43.825164649311255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2c996e58e517%3A0x4b1fb870347a3044!2sBlue%20Spruce%20Ln%2C%20Markham%2C%20ON%2C%20Canada!5e0!3m2!1sit!2sit!4v1657696872952!5m2!1sit!2sit" width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </li>
                     <li>
                         <h4><i class="fa-solid fa-envelope"></i><span>E mail</span></h4>
                         <address>
-                            rest@gmail.com - rest@mail.ru
+                           <a target="_blank" class="refs" href="mailto:rest@gmail.com">rest@gmail.com - rest@mail.ru</a>
                         </address>
                     </li>
                 </ul>
@@ -475,17 +479,18 @@
                 <div>
                     <h3 class="Follow">Follow <span>US</span></h3>
                     <ul>
-                        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fa-solid fa-basketball"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                        <a target="_blank" href="https://twitter.com/starwars" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/epicodeitalia" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><i class="fa-solid fa-basketball"></i></a>
+                        <a target="_blank" href="https://www.behance.net/search?search=digital%20art&sdid=GZKZXXYX&mv=search" target="_blank"><i class="fa-brands fa-behance"></i></a>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="copy">
-            Copyright © 2014 - All Rights Reserved.Design and Developed By <span>Themefisher</span>
+            Copyright © 2014 - All Rights Reserved.Design and Developed By <span><a target="_blank" href="https://themefisher.com/">Themefisher</a></span>
         </div>
+    </section>
 
     </footer>
 
@@ -496,6 +501,7 @@
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/animazione-menu.js"></script>
 
 </body>
 

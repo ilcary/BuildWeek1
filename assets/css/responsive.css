@@ -107,6 +107,11 @@
     }
 
 
+    .maps{
+        display: none;
+    }
+
+
 
 
 
@@ -316,6 +321,14 @@
         height: 100%;
 
     }
+
+
+    .maps{
+        display: none;
+    }
+
+
+
 }
 
 
@@ -421,7 +434,14 @@
 
     footer .stream img:nth-of-type(4){
         padding-left:0px;
-    }
+
+}
+
+.maps{
+    display: block;
+}
+
+
 }
 @media screen and (min-width: 1200px) {
 
@@ -441,6 +461,7 @@
     footer :not(.copy) {
         max-width: 1170px;
     }
+
 }
 
 
