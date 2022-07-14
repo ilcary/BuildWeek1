@@ -100,7 +100,7 @@
     /*==========BLOG===========*/
 
     .intbtn {
-        margin: 4rem;
+        margin: 2.5rem;
 
     }
 
@@ -501,7 +501,6 @@
         grid-column-start: 2;
         grid-column-end: 3;
         width: 36.8rem;
-        padding-left: 23rem;
         margin-bottom: 8rem;
     }
 
