@@ -54,12 +54,16 @@ function plsStick(elemento) {
 /*==============================================ANIMAZIONI========MENU=============================*/
 
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  let reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    //window.innerHeight mi da l'altezza del  viewport.
+
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    //getBoundingClientRect().top mi da la distanza dal top della viewport
+
+    let elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -70,26 +74,4 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-
-
-//===================newsletter =============================
-
-function revealnews() {
-  var revealsnews = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < revealsnews.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = revealsnews[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      revealsnews[i].classList.add("active");
-    } else {
-      revealsnews[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealnews);
 
