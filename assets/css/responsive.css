@@ -574,6 +574,16 @@
         margin: 0.5rem 22rem 1rem 22rem;
     }
 
+    .buttonmessage-right {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2rem;
+    }
+
+    .send-message {
+        margin: 0rem 0rem;
+    }
+
 
     footer :not(.copy) {
         max-width: 1170px;
