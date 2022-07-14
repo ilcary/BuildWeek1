@@ -582,11 +582,6 @@
         padding-top: 2rem;
     }
 
-    .buttonmessage-right {
-        display: flex;
-        justify-content: flex-end;
-    }
-
     .send-message {
         margin: 0rem 0rem;
     }
