@@ -45,7 +45,6 @@ h4 {
 }
 
 .top-nav {
-    /*da modificare x tablet e desktop margin top e rivedere dove inizia la tendina*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,14 +56,18 @@ h4 {
     padding: 2rem;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.89);
-    position: sticky;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     z-index: 100;
-    max-width: 90%;
-    margin: 0 auto;
+    width: 90%;
     font-size: 1.2rem;
 
 
+}
+
+#home.sticked{
+    position: fixed;
+    top: 0px;
 }
 
 .top-nav>div {
@@ -149,6 +152,8 @@ h4 {
     width: 100%;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -170,6 +175,18 @@ section{
 
 #testo span {
     color: #FF5E17;
+}
+
+.swiper-button-next{
+    padding: 1rem;
+    transition: 1s;
+}
+
+.swiper-button-next:hover{
+    background-color: #FF5E17;
+    color: white;
+    border-radius: 35%;
+    
 }
 
 .container-sec {
@@ -195,7 +212,6 @@ section{
 .card-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px 14px;
 }
 
@@ -266,7 +282,7 @@ section{
     line-height:1.6;
 }
 
-/*==============================BLOG===============================*/
+/*============================================BLOG=============================================================================*/
 
 .blog {
     text-align: center;
@@ -339,7 +355,7 @@ section{
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-/*============================================BLOG=============================================================================*/
+
 
 #blog-background {
     background-image: url("../images/blog/blog-bg.jpg");
@@ -383,7 +399,7 @@ section{
     font-weight: bold;
     padding: 3rem;
     text-align: center;
-    width: 17rem;
+    width: 22.3rem;
 }
 
 .intbtn a{
@@ -402,191 +418,6 @@ section{
 
 
 
-
-/*=================================FOOTER================================*/
-footer {
-    font-size: 1.4rem;
-}
-
-footer span {
-    color: #FF4F02;
-}
-
-footer h3 {
-    font-weight: bold;
-    padding: 0px 0px 25px
-}
-
-footer h4 {
-    font-size: 1.8rem;
-    padding: 0px 0px 10px;
-    font-weight: 500;
-}
-
-.box2 a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-footer i {
-    color: #b0b0b0;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-}
-
-footer ul {
-    padding: 20px, 0px, 0px;
-}
-
-footer ul li {
-    list-style: none;
-    padding: 20px 0px 0px;
-}
-
-footer .box {
-    padding: 70px 0;
-}
-
-footer .box1,
-footer .box3 {
-    padding: 0px 15px 50px;
-}
-
-footer .box1 i {
-    color: rgb(55, 55, 55)
-}
-
-footer .box1 .refs {
-    text-shadow: none;
-    font-weight: initial;
-    font-size: 1.4rem;
-}
-
-footer .box2 {
-    padding: 20px 15px 70px;
-}
-
-footer .box2 a {
-    color: #FF4F02;
-    font-size: 2rem;
-}
-
-footer .box2 div {
-    padding: 20px 0px 0px;
-}
-
-footer .box3 .stream {
-    padding: 10px 0px 0px;
-}
-
-footer .box3 .stream img {
-    padding: 1rem;
-}
-
-footer .box3 .stream img:nth-of-type(1) {
-    padding-left: 0px;
-}
-
-footer .box3 .follow {
-    padding: 30px 0px 15px;
-}
-
-footer .box3 ul a {
-    font-size: 3.5rem;
-
-}
-
-footer .copy {
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 1.2;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 20px;
-    background-color: #E9E9E9;
-    padding: 20px;
-}
-
-footer .copy span {
-    font-size: 1.6rem;
-}
-
-footer .copy a{
-    font-size: 1.5rem;
-    color:#FF4F02;
-    font-weight: 600;
-}
-
-.box1 {
-    animation: apparizione1 3s;
-}
-
-.box2 {
-    animation: apparizione2 2s;
-}
-
-.box3 {
-    animation: apparizione3 1.7s;
-}
-
-@keyframes apparizione1 {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes apparizione2 {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    33% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    66% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes apparizione3 {
-    0% {
-
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    66% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
 
 /*==============================MENU PRICING===============================*/
 
@@ -860,12 +691,21 @@ footer .copy a{
 }
 
 .send-message {
+    border: 1px solid #FF5E17;
     background-color: #FF5E17;
     font-size: 1.5rem;
     padding: 2rem;
     text-align: center;
     margin: 0 auto;
     margin-top: 2rem;
+    transition: 1s;
+}
+
+.send-message:hover{
+    background-color: #ffffff;
+}
+.send-message:hover a{
+    color: #FF5E17;
 }
 
 .send-message a {
@@ -884,6 +724,207 @@ footer .copy a{
     margin-bottom: 1.5rem;
 }
 
+
+
+
+/*=================================FOOTER================================*/
+footer {
+    font-size: 1.4rem;
+}
+
+footer span {
+    color: #FF4F02;
+}
+
+footer h3 {
+    font-weight: bold;
+    padding: 0px 0px 25px
+}
+
+footer h4 {
+    font-size: 1.8rem;
+    padding: 0px 0px 10px;
+    font-weight: 500;
+}
+
+.box2 a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer i {
+    color: #b0b0b0;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    transition: 400ms;
+}
+
+footer i:hover{
+    color: #FF4F02;
+    font-size: 4rem;
+}
+
+footer ul {
+    padding: 20px, 0px, 0px;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 20px 0px 0px;
+}
+
+footer .box {
+    padding: 70px 0;
+}
+
+footer .box1,
+footer .box3 {
+    padding: 0px 15px 50px;
+}
+
+footer .box1 i {
+    color: rgb(55, 55, 55)
+}
+
+footer .box1 .refs {
+    text-shadow: none;
+    font-weight: initial;
+    font-size: 1.4rem;
+    transition: 400ms;
+}
+
+footer .box1 .refs:hover{
+    background-color: rgba(230, 230, 230, 0.705);
+    padding: 1rem;
+
+}
+
+footer .box2 {
+    padding: 20px 15px 70px;
+}
+
+footer .box2 a {
+    color: #FF4F02;
+    font-size: 2rem;
+}
+
+footer .box2 div {
+    padding: 20px 0px 0px;
+}
+
+footer .box3 .stream {
+    padding: 10px 0px 0px;
+}
+
+footer .box3 .stream img {
+    padding: 1rem;
+}
+
+footer .box3 .stream img:nth-of-type(1) {
+    padding-left: 0px;
+}
+
+footer .box3 .follow {
+    padding: 30px 0px 15px;
+}
+
+footer .box3 ul a {
+    font-size: 3.5rem;
+
+}
+
+footer .copy {
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 1.2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px;
+    background-color: #E9E9E9;
+    padding: 20px;
+}
+
+footer .copy span {
+    font-size: 1.6rem;
+}
+
+footer .copy a{
+    font-size: 1.5rem;
+    color:#FF4F02;
+    font-weight: 600;
+}
+
+
+.box1.active {
+    animation: apparizione1 1s;
+}
+
+.box2.active {
+    animation: apparizione2 1s;
+}
+
+.box3.active {
+    animation: apparizione3 1s;
+}
+
+@keyframes apparizione1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes apparizione2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes apparizione3 {
+    0% {
+
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    66% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 
 /*==============================================ANIMAZIONI==========================================
