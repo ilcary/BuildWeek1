@@ -642,18 +642,18 @@ footer .copy a{
     margin-right: auto;
 }
 
-#menu-price h1,
+#menu-price h2,
 .description {
     text-align: center;
 }
 
-#menu-price h1 {
-    padding: 7rem 0rem 2rem;
+#menu-price h2 {
+    padding: 3rem 0rem 2rem;
     font-size: 2.8rem;
 }
 
 
-#menu-price h1 span, #menu-price h3 span{
+#menu-price h2 span, #menu-price h3 span{
 
     font-weight: bold;
     color: #FF530A;
@@ -661,7 +661,7 @@ footer .copy a{
 
 
 .description,
-.pricing p {
+.dish p{
     color: #9D9D9D;
 }
 
@@ -676,13 +676,6 @@ footer .copy a{
     border: 1px dotted #C9C9C9;
 }
 
-.pricing p {
-
-    font-size: 90%;
-    line-height: 2.2rem;
-}
-
-
 .pricing {
     padding: 6rem 0rem 0rem;
 }
@@ -696,9 +689,6 @@ footer .copy a{
     font-weight: bold;
 }
 
-.dish-title h2 {
-    padding: 0rem 0rem 1rem;
-}
 
 .dish .dish-price {
     color: #938463;
@@ -706,24 +696,16 @@ footer .copy a{
     font-weight: lighter;
 }
 
-.pricing {
-    padding: 60px 0px 0px;
-}
-
-.title {
-    padding: 30px 0px;
-
-}
-
-.dish-title h2 {
+.dish-title h3 {
     padding: 0px 0px 10px;
+    font-size: 2.4rem;
+    font-weight: lighter;
 }
-
 
 .dish p{
-    color: #938463;
     font-size: 1.5rem;
      padding: 1rem 0rem 0rem;
+     line-height: 2.2rem;
 }
 
 .pricing li {
@@ -798,7 +780,7 @@ footer .copy a{
     border: 0.1px solid rgb(255, 255, 255);
 }
 
-#newsletter h1 {
+#newsletter h2 {
     padding: 7rem 0rem 2rem;
     font-size: 2.8rem;
 }
@@ -809,18 +791,18 @@ footer .copy a{
 }
 
 
-#newsletter h1 span{
+#newsletter h2 span{
     font-weight: bold;
     color: #FF530A;
 }
 
-#newsletter h1,
+#newsletter h2,
 #newsletter p {
     text-align: center;
     color: #FFF;
 }
 
-#newsletter h1 {
+#newsletter h2 {
     padding: 40px 0px;
 }
 
@@ -829,7 +811,7 @@ footer .copy a{
     font-size: 110%;
 }
 
-#newsletter h1,
+#newsletter h2,
 #newsletter p {
 
     text-align: center;
@@ -868,12 +850,12 @@ footer .copy a{
 
 
 
-#contact-us h1 span, #contact-us h3 span{
+#contact-us h2 span, #contact-us h3 span{
     font-weight: bold;
     color: #FF530A;
 }
 
-#contact-us h1{
+#contact-us h2{
     padding: 10rem 0rem 2rem;
     text-align: center;
     font-size: 2.8rem;

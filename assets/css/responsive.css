@@ -259,7 +259,7 @@
     /*================CONTACT US================*/
 
 
-    #contact-us h1 {
+    #contact-us h2 {
         font-size: 4.2rem;
     }
 
@@ -288,7 +288,7 @@
         width: 140%;
     }
 
-    #newsletter h1 {
+    #newsletter h2 {
         font-size: 4.2rem;
         padding: 5rem 0rem 2rem;
     }
@@ -305,7 +305,7 @@
         padding: 0px;
     }
 
-    #menu-price h1 {
+    #menu-price h2 {
         font-size: 4.2rem;
     }
 
@@ -317,7 +317,7 @@
         position: relative;
     }
 
-    .dish-title h2 {
+    .dish-title h3 {
         display: inline-block;
         position: relative;
         z-index: 99;
@@ -431,10 +431,10 @@
         justify-content: flex-end;
         padding-top: 2rem;
     }
-
-
+    
     .send-message {
         width: 50%;
+        margin: 0rem 0rem;
     }
 
     section {
@@ -575,22 +575,6 @@
         margin: 0.5rem 22rem 1rem 22rem;
     }
 
-
-
-    .buttonmessage-right {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 2rem;
-    }
-
-    .buttonmessage-right {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .send-message {
-        margin: 0rem 0rem;
-    }
 
     footer :not(.copy) {
         max-width: 1170px;
