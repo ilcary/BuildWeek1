@@ -173,7 +173,7 @@
         padding: 100px 0px;
     }
 
-    #About_Us h1 {
+    #About_Us h2 {
         font-size: 3.6rem;
     }
 
@@ -529,7 +529,7 @@
     }
 
     footer .box {
-
+        padding-top: 140px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
