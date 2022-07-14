@@ -51,7 +51,7 @@ function plsStick(elemento) {
 }
 
 
-/*==============================================ANIMAZIONI========MENU=============================*/
+/*==============================================ANIMAZIONI===============================*/
 
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
