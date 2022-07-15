@@ -492,6 +492,8 @@
         justify-content: flex-start;
     }
 
+    
+
 
 
 
@@ -556,6 +558,7 @@
 
 
     }
+
 }
 
 
@@ -589,5 +592,8 @@
         max-width: 1170px;
     }
 
+    footer .stream img:nth-of-type(4) {
+        padding-left: 1rem;
+    }
 
 }

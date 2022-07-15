@@ -65,7 +65,7 @@ h4 {
 
 }
 
-#home.sticked{
+#home.sticked {
     position: fixed;
     top: 0px;
 }
@@ -157,7 +157,7 @@ h4 {
 
 }
 
-#bgheader::before{
+#bgheader::before {
     background: url("../images/overlay-pattern.png") rgba(0, 0, 0, 0.1);
     content: "";
     position: absolute;
@@ -166,7 +166,7 @@ h4 {
 }
 
 
-section{
+section {
     max-width: 90%;
     margin: 0 auto;
 }
@@ -177,16 +177,16 @@ section{
     color: #FF5E17;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     padding: 1rem;
     transition: 1s;
 }
 
-.swiper-button-next:hover{
+.swiper-button-next:hover {
     background-color: #FF5E17;
     color: white;
     border-radius: 35%;
-    
+
 }
 
 .container-sec {
@@ -279,7 +279,7 @@ section{
 #About_Us article {
     color: #959595;
     padding: 20px 0px 0px;
-    line-height:1.6;
+    line-height: 1.6;
 }
 
 /*============================================BLOG=============================================================================*/
@@ -367,7 +367,7 @@ section{
 
 }
 
-#blog-background::before{
+#blog-background::before {
     background: url("../images/overlay-pattern2.png") rgba(0, 0, 0, 0.1);
     content: "";
     position: absolute;
@@ -376,7 +376,7 @@ section{
     z-index: 1;
 }
 
-.blog{
+.blog {
     position: relative;
     z-index: 3;
 }
@@ -392,7 +392,7 @@ section{
     font-weight: bold;
 }
 
-.intbtn{
+.intbtn {
     border: 1px solid #FF5E17;
     background-color: #FF5E17;
     font-size: 1.6rem;
@@ -402,17 +402,17 @@ section{
     width: 22.3rem;
 }
 
-.intbtn a{
+.intbtn a {
     color: #ffffff;
 }
 
-.intbtn:hover a{
-    color:#FF5E17;
+.intbtn:hover a {
+    color: #FF5E17;
 }
 
-.intbtn:hover{
+.intbtn:hover {
     background-color: #ff5d1700;
-    transition: 0.3s all; 
+    transition: 0.3s all;
 }
 
 
@@ -454,7 +454,8 @@ section{
 }
 
 
-#menu-price h2 span, #menu-price h3 span{
+#menu-price h2 span,
+#menu-price h3 span {
 
     font-weight: bold;
     color: #FF530A;
@@ -462,7 +463,7 @@ section{
 
 
 .description,
-.dish p{
+.dish p {
     color: #9D9D9D;
 }
 
@@ -503,10 +504,10 @@ section{
     font-weight: lighter;
 }
 
-.dish p{
+.dish p {
     font-size: 1.5rem;
-     padding: 1rem 0rem 0rem;
-     line-height: 2.2rem;
+    padding: 1rem 0rem 0rem;
+    line-height: 2.2rem;
 }
 
 .pricing li {
@@ -518,7 +519,7 @@ section{
     padding: 0rem 0rem 7rem;
 }
 
-.more-info{
+.more-info {
     border: 1px solid #FF5E17;
     background-color: white;
     font-size: 1.6rem;
@@ -528,20 +529,20 @@ section{
     width: 22rem;
 }
 
-.more-info a{
+.more-info a {
     color: #FF5E17;
 }
 
-.more-info:hover a{
-    color:white;
+.more-info:hover a {
+    color: white;
 }
 
-.more-info:hover{
+.more-info:hover {
     background-color: #FF5E17;
-    transition: 0.3s all; 
+    transition: 0.3s all;
 }
 
-.button-right{
+.button-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -562,17 +563,17 @@ section{
     z-index: 0;
 }
 
-#newsletter-background::before{
+#newsletter-background::before {
     background: url("../images/overlay-pattern2.png") rgba(0, 0, 0, 0.1);
     content: "";
     position: absolute;
     margin-top: -10rem;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 
-#newsletter{
+#newsletter {
     position: relative;
     z-index: 3;
 }
@@ -592,7 +593,7 @@ section{
 }
 
 
-#newsletter h2 span{
+#newsletter h2 span {
     font-weight: bold;
     color: #FF530A;
 }
@@ -651,23 +652,26 @@ section{
 
 
 
-#contact-us h2 span, #contact-us h3 span{
+#contact-us h2 span,
+#contact-us h3 span {
     font-weight: bold;
     color: #FF530A;
 }
 
-#contact-us h2{
+#contact-us h2 {
     padding: 10rem 0rem 2rem;
     text-align: center;
     font-size: 2.8rem;
 }
 
-#contact-us h3{
+#contact-us h3 {
     padding: 2rem 0rem;
     font-weight: bold;
 }
 
-#full-name, #enter-email, #contact-us textarea{
+#full-name,
+#enter-email,
+#contact-us textarea {
     padding: 1.8rem 1rem;
     margin-bottom: 1.5rem;
 }
@@ -683,10 +687,11 @@ section{
     transition: 1s;
 }
 
-.send-message:hover{
+.send-message:hover {
     background-color: #ffffff;
 }
-.send-message:hover a{
+
+.send-message:hover a {
     color: #FF5E17;
 }
 
@@ -742,7 +747,7 @@ footer i {
     transition: 400ms;
 }
 
-footer i:hover{
+footer i:hover {
     color: #FF4F02;
     font-size: 4rem;
 }
@@ -776,7 +781,7 @@ footer .box1 .refs {
     transition: 400ms;
 }
 
-footer .box1 .refs:hover{
+footer .box1 .refs:hover {
     background-color: rgba(230, 230, 230, 0.705);
     padding: 1rem;
 
@@ -831,9 +836,9 @@ footer .copy span {
     font-size: 1.6rem;
 }
 
-footer .copy a{
+footer .copy a {
     font-size: 1.5rem;
-    color:#FF4F02;
+    color: #FF4F02;
     font-weight: 600;
 }
 
@@ -914,12 +919,16 @@ footer .copy a{
 
 .reveal {
     position: relative;
+    transform: translateY(150px);
     opacity: 0;
+    transition: 2s all ease;
 }
 
 .reveal.active {
+    transform: translateY(0);
     opacity: 1;
 }
+
 
 .active.fade-bottom {
     animation: fade-bottom 1s ease-in;
@@ -931,7 +940,7 @@ footer .copy a{
 
 .active.fade-right {
     animation: fade-right 1s ease-in;
-  }
+}
 
 
 @keyframes fade-bottom {
@@ -955,18 +964,20 @@ footer .copy a{
     100% {
         transform: translateX(0);
         opacity: 1;
-    }  
+    }
 }
+
 @keyframes fade-right {
     0% {
-      transform: translateX(100px);
-      opacity: 0;
+        transform: translateX(100px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
+}
 
 /*================================MENU HAMBURGER==============================*/
 
@@ -977,7 +988,7 @@ footer .copy a{
 }
 
 .menu li a:after,
-.menu .active {
+.menuref.sottolineato:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -991,22 +1002,8 @@ footer .copy a{
 }
 
 .menu li a:hover:after,
-.menu .active
- {
+.menuref.sottolineato:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-  }
-  
-  .reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  
