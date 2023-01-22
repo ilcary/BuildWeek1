@@ -1,3 +1,3 @@
 # Resturant mockup
 
-Realizare un sito più fedele al template fornito.
+Realizzazione di un sito più fedele al template fornito.
